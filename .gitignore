@@ -1,0 +1,14 @@
+# Xcode / build output
+build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+
+# macOS
+.DS_Store
+
+# gstack browser daemon drops session tokens here
+.gstack/
+
+# local agent config
+.claude/

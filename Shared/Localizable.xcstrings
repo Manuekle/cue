@@ -1,0 +1,2886 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "· %@" : {
+      "shouldTranslate" : false
+    },
+    "%@" : {
+
+    },
+    "%@ · click the notch to open" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · clic en el notch para abrir"
+          }
+        }
+      }
+    },
+    "%@ (%lld)" : {
+      "shouldTranslate" : false
+    },
+    "%@ can't find the model. Choose another one in Cue › Copilot." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ no encuentra el modelo. Elige otro en Cue › Copiloto."
+          }
+        }
+      }
+    },
+    "%@ rejected the API key. Check it in Cue › Copilot." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ rechazó la API key. Revísala en Cue › Copiloto."
+          }
+        }
+      }
+    },
+    "%@ responded %lld." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ respondió %2$lld."
+          }
+        }
+      }
+    },
+    "%@ words" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ palabras"
+          }
+        }
+      }
+    },
+    "%@ words · %@ min" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ palabras · %2$@ min"
+          }
+        }
+      }
+    },
+    "%@: usage limit reached or out of credit. Wait a moment or check your account." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@: límite de uso alcanzado o sin saldo. Espera un momento o revisa tu cuenta."
+          }
+        }
+      }
+    },
+    "%lld" : {
+      "shouldTranslate" : false
+    },
+    "%lld scripts" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld guiones"
+          }
+        }
+      }
+    },
+    "%lld seconds" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld segundos"
+          }
+        }
+      }
+    },
+    "%lld words" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld palabras"
+          }
+        }
+      }
+    },
+    "%lld words/min" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld palabras/min"
+          }
+        }
+      }
+    },
+    "%lld wpm" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ppm"
+          }
+        }
+      }
+    },
+    "⌃⌥ ← / →" : {
+      "shouldTranslate" : false
+    },
+    "⌃⌥ ↑ / ↓" : {
+      "shouldTranslate" : false
+    },
+    "⌃⌥ ↩" : {
+      "shouldTranslate" : false
+    },
+    "⌃⌥ L" : {
+      "shouldTranslate" : false
+    },
+    "⌃⌥ P" : {
+      "shouldTranslate" : false
+    },
+    "⌃⌥ R" : {
+      "shouldTranslate" : false
+    },
+    "⌃⌥ Space" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⌃⌥ Espacio"
+          }
+        }
+      }
+    },
+    "⌃⌥⌘ 0" : {
+      "shouldTranslate" : false
+    },
+    "⌃⌥⌘ 1–9" : {
+      "shouldTranslate" : false
+    },
+    "⌥⌘ 1–9" : {
+      "shouldTranslate" : false
+    },
+    "▶ counts %lld and starts · tap the text to pause" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "▶ cuenta %lld y empieza · toca el texto para pausar"
+          }
+        }
+      }
+    },
+    "▶ to start · tap the text to pause" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "▶ para empezar · toca el texto para pausar"
+          }
+        }
+      }
+    },
+    "1 script" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 guion"
+          }
+        }
+      }
+    },
+    "Accurate · 630 MB" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preciso · 630 MB"
+          }
+        }
+      }
+    },
+    "AI" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IA"
+          }
+        }
+      }
+    },
+    "AI answer" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Respuesta IA"
+          }
+        }
+      }
+    },
+    "Alignment" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alineación"
+          }
+        }
+      }
+    },
+    "All" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todos"
+          }
+        }
+      }
+    },
+    "All (%lld)" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todos (%lld)"
+          }
+        }
+      }
+    },
+    "All scripts" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todos los guiones"
+          }
+        }
+      }
+    },
+    "Allow camera access in Settings › Cue." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permite el acceso a la cámara en Ajustes › Cue."
+          }
+        }
+      }
+    },
+    "Also hear the other person (Mac audio)" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oír también a la otra persona (audio del Mac)"
+          }
+        }
+      }
+    },
+    "API key" : {
+      "shouldTranslate" : false
+    },
+    "Apple Intelligence is processing your context." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence está procesando tu contexto."
+          }
+        }
+      }
+    },
+    "Apple Intelligence is still downloading its model." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence aún está descargando su modelo."
+          }
+        }
+      }
+    },
+    "Apple Intelligence isn't available." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence no está disponible."
+          }
+        }
+      }
+    },
+    "Apple Intelligence needs macOS 26 or later." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence necesita macOS 26 o posterior."
+          }
+        }
+      }
+    },
+    "Apple model on your Mac. Ready." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modelo de Apple en tu Mac. Listo."
+          }
+        }
+      }
+    },
+    "Ask" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preguntar"
+          }
+        }
+      }
+    },
+    "Ask the AI what to say now (⌃⌥↩)" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pedir a la IA qué decir ahora (⌃⌥↩)"
+          }
+        }
+      }
+    },
+    "Auto-start" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empezar solo"
+          }
+        }
+      }
+    },
+    "B&W" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "B/N"
+          }
+        }
+      }
+    },
+    "Back to start" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volver al inicio"
+          }
+        }
+      }
+    },
+    "Back to start (R)" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volver al inicio (R)"
+          }
+        }
+      }
+    },
+    "Back to the start of the text" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volver al inicio del texto"
+          }
+        }
+      }
+    },
+    "Background" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fondo"
+          }
+        }
+      }
+    },
+    "Balanced · 480 MB" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Equilibrado · 480 MB"
+          }
+        }
+      }
+    },
+    "Camera off" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cámara apagada"
+          }
+        }
+      }
+    },
+    "Camera on" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cámara encendida"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        }
+      }
+    },
+    "Centered" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Centrado"
+          }
+        }
+      }
+    },
+    "Choose an Ollama model in the Cue window." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elige un modelo de Ollama en la ventana de Cue."
+          }
+        }
+      }
+    },
+    "Choose model" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elegir modelo"
+          }
+        }
+      }
+    },
+    "Choose or write one in the Cue window." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elige o escribe uno en la ventana de Cue."
+          }
+        }
+      }
+    },
+    "Choose script" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elegir guion"
+          }
+        }
+      }
+    },
+    "Cinema" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cine"
+          }
+        }
+      }
+    },
+    "Claude declined to answer this. Try again or switch models." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude no quiso responder a esto. Prueba otra vez o cambia de modelo."
+          }
+        }
+      }
+    },
+    "Claude returned an error." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude devolvió un error."
+          }
+        }
+      }
+    },
+    "Clear conversation" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Borrar la conversación"
+          }
+        }
+      }
+    },
+    "Click the notch to close" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clic en el notch para cerrar"
+          }
+        }
+      }
+    },
+    "Click to open the prompter" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clic para abrir el prompter"
+          }
+        }
+      }
+    },
+    "Close floating window" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerrar ventana flotante"
+          }
+        }
+      }
+    },
+    "Close Cue and open it again to change the language." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cierra Cue y vuelve a abrirlo para cambiar el idioma."
+          }
+        }
+      }
+    },
+    "Collapse prompter" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contraer prompter"
+          }
+        }
+      }
+    },
+    "Context" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contexto"
+          }
+        }
+      }
+    },
+    "Conversation" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conversación"
+          }
+        }
+      }
+    },
+    "Cool" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frío"
+          }
+        }
+      }
+    },
+    "Copilot" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copiloto"
+          }
+        }
+      }
+    },
+    "Copilot: listen / stop" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copiloto: escuchar / detener"
+          }
+        }
+      }
+    },
+    "Copilot: what do I say?" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copiloto: ¿qué digo?"
+          }
+        }
+      }
+    },
+    "Copy suggestion" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copiar sugerencia"
+          }
+        }
+      }
+    },
+    "Couldn't load Whisper: %@" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo cargar Whisper: %@"
+          }
+        }
+      }
+    },
+    "Couldn't open the microphone: %@" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo abrir el micrófono: %@"
+          }
+        }
+      }
+    },
+    "Couldn't open: %@" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo abrir: %@"
+          }
+        }
+      }
+    },
+    "Couldn't save the video" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo guardar el video"
+          }
+        }
+      }
+    },
+    "Couldn't save: allow access to Photos in Settings." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo guardar: permite el acceso a Fotos en Ajustes."
+          }
+        }
+      }
+    },
+    "Countdown" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuenta regresiva"
+          }
+        }
+      }
+    },
+    "counts down %lld seconds" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "cuenta %lld segundos"
+          }
+        }
+      }
+    },
+    "Create" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crear"
+          }
+        }
+      }
+    },
+    "Create a script to get started." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea un guion para empezar."
+          }
+        }
+      }
+    },
+    "Create your first script to start recording." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea tu primer guion para empezar a grabar."
+          }
+        }
+      }
+    },
+    "Delete" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminar"
+          }
+        }
+      }
+    },
+    "Delete “%@”…" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminar “%@”…"
+          }
+        }
+      }
+    },
+    "Delete session" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminar sesión"
+          }
+        }
+      }
+    },
+    "Delete session?" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Eliminar sesión?"
+          }
+        }
+      }
+    },
+    "Detect" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detectar"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Listo"
+          }
+        }
+      }
+    },
+    "Downloading Whisper · %lld%%" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descargando Whisper · %lld %%"
+          }
+        }
+      }
+    },
+    "Downloading Whisper to transcribe on your Mac…" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descargando Whisper para transcribir en tu Mac…"
+          }
+        }
+      }
+    },
+    "E.g.: Interview for Senior iOS Developer at Acme. 6 years with Swift and SwiftUI; I led the payments app at Bank X (2M users). Salary expectation: 85k USD. Goal: get to the technical round." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ej.: Entrevista para iOS Developer senior en Acme. Tengo 6 años con Swift y SwiftUI; lideré la app de pagos de Banco X (2 M de usuarios). Pretensión: 85 k USD. Objetivo: pasar a la ronda técnica."
+          }
+        }
+      }
+    },
+    "End of script" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fin del guion"
+          }
+        }
+      }
+    },
+    "End of script · ▶ to replay" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fin del guion · ▶ para repetir"
+          }
+        }
+      }
+    },
+    "Engine" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Motor"
+          }
+        }
+      }
+    },
+    "English" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inglés"
+          }
+        }
+      }
+    },
+    "Fast · 145 MB" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rápido · 145 MB"
+          }
+        }
+      }
+    },
+    "Faster" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Más rápido"
+          }
+        }
+      }
+    },
+    "Faster / slower" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Más rápido / más lento"
+          }
+        }
+      }
+    },
+    "Filters" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtros"
+          }
+        }
+      }
+    },
+    "Fixed speed" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velocidad fija"
+          }
+        }
+      }
+    },
+    "Flips the text for use with teleprompter glass." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invierte el texto para usarlo con un cristal de teleprompter."
+          }
+        }
+      }
+    },
+    "Floating" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flotante"
+          }
+        }
+      }
+    },
+    "Floating prompter" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prompter flotante"
+          }
+        }
+      }
+    },
+    "Follows my voice" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sigue mi voz"
+          }
+        }
+      }
+    },
+    "full screen" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "pantalla completa"
+          }
+        }
+      }
+    },
+    "Get key" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obtener"
+          }
+        }
+      }
+    },
+    "Get ready…" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prepárate…"
+          }
+        }
+      }
+    },
+    "Global shortcuts, from any app" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atajos globales, desde cualquier app"
+          }
+        }
+      }
+    },
+    "Go to script 1–9 in the list" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ir al guion 1–9 de la lista"
+          }
+        }
+      }
+    },
+    "Group scripts by project, channel or topic." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agrupa guiones por proyecto, canal o tema."
+          }
+        }
+      }
+    },
+    "Hi. This is your first practice script.\n\nWrite or paste what you want to say here. Cue shows it big, clear and at the speed you choose.\n\nBefore you start, a countdown gives you time to get settled in front of the camera.\n\nSee the arrow on the left: that's your reading line. Always read at that height and your gaze will look natural.\n\nTap the text to pause. Swipe to move forward or back.\n\nIf you're going too fast or too slow, adjust the speed with the minus and plus buttons.\n\nDone! Now delete this text and write your own script." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hola. Este es tu primer guion de prueba.\n\nEscribe o pega aquí lo que quieres decir. Cue lo muestra grande, claro y a la velocidad que elijas.\n\nAntes de empezar, una cuenta regresiva te da tiempo para acomodarte frente a la cámara.\n\nMira la flecha de la izquierda: esa es tu línea de lectura. Lee siempre a esa altura y tu mirada se verá natural.\n\nToca el texto para pausar. Desliza con el dedo para avanzar o volver atrás.\n\nSi vas muy rápido o muy lento, ajusta la velocidad con los botones de menos y más.\n\n¡Listo! Ahora borra este texto y escribe tu propio guion."
+          }
+        }
+      }
+    },
+    "Hide" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ocultar"
+          }
+        }
+      }
+    },
+    "Hide tab" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ocultar pestaña"
+          }
+        }
+      }
+    },
+    "Hit record. Cue notices, %@ and the text starts on its own. When you stop recording, it pauses." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dale a grabar. Cue lo nota, %@ y el texto arranca solo. Al dejar de grabar, se pausa."
+          }
+        }
+      }
+    },
+    "Horizontal" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Horizontal"
+          }
+        }
+      }
+    },
+    "How to use it" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cómo usarlo"
+          }
+        }
+      }
+    },
+    "In the cloud (with your API key)" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En la nube (con tu API key)"
+          }
+        }
+      }
+    },
+    "Language" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idioma"
+          }
+        }
+      }
+    },
+    "Left" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Izquierda"
+          }
+        }
+      }
+    },
+    "Light" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luz"
+          }
+        }
+      }
+    },
+    "Listen (⌃⌥L)" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escuchar (⌃⌥L)"
+          }
+        }
+      }
+    },
+    "Listen / stop (⌃⌥L)" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escuchar / detener (⌃⌥L)"
+          }
+        }
+      }
+    },
+    "Listening" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escucha"
+          }
+        }
+      }
+    },
+    "Listening. When the other person finishes talking, you'll see what to say here." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escuchando. Cuando la otra persona termine de hablar, aquí verás qué decir."
+          }
+        }
+      }
+    },
+    "Listening…" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escuchando"
+          }
+        }
+      }
+    },
+    "Listens to the conversation with Whisper (on your Mac) and suggests what to say with %@. The transcript and context are sent to %@." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escucha la conversación con Whisper (en tu Mac) y te sugiere qué decir con %1$@. La transcripción y el contexto se envían a %2$@."
+          }
+        }
+      }
+    },
+    "Listens to the conversation with Whisper and suggests what to say with local AI. Nothing leaves your Mac." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escucha la conversación con Whisper y te sugiere qué decir con IA local. Nada sale de tu Mac."
+          }
+        }
+      }
+    },
+    "Load from my account" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cargar los de mi cuenta"
+          }
+        }
+      }
+    },
+    "Local models are slow with a long context. For instant answers, use a cloud one." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los modelos locales son lentos con un contexto largo. Para respuestas al instante, usa uno en la nube."
+          }
+        }
+      }
+    },
+    "Microphone free" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Micrófono libre"
+          }
+        }
+      }
+    },
+    "Microphone in use" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Micrófono en uso"
+          }
+        }
+      }
+    },
+    "Mirror mode" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modo espejo"
+          }
+        }
+      }
+    },
+    "Mirror mode (M)" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modo espejo (M)"
+          }
+        }
+      }
+    },
+    "Missing the %@ API key. Add it in Cue › Copilot." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Falta la API key de %@. Ponla en Cue › Copiloto."
+          }
+        }
+      }
+    },
+    "Missing the Ollama Cloud API key. Add it in Cue › Copilot." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Falta la API key de Ollama Cloud. Ponla en Cue › Copiloto."
+          }
+        }
+      }
+    },
+    "Model" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modelo"
+          }
+        }
+      }
+    },
+    "Models" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modelos"
+          }
+        }
+      }
+    },
+    "More options" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Más opciones"
+          }
+        }
+      }
+    },
+    "Move to session" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mover a sesión"
+          }
+        }
+      }
+    },
+    "Name" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre"
+          }
+        }
+      }
+    },
+    "Natural" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Natural"
+          }
+        }
+      }
+    },
+    "New script" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuevo guion"
+          }
+        }
+      }
+    },
+    "New script (⌘N)" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuevo guion (⌘N)"
+          }
+        }
+      }
+    },
+    "New session" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nueva sesión"
+          }
+        }
+      }
+    },
+    "New session…" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nueva sesión…"
+          }
+        }
+      }
+    },
+    "No camera: only the text moves" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sin cámara: solo se mueve el texto"
+          }
+        }
+      }
+    },
+    "No countdown" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sin cuenta"
+          }
+        }
+      }
+    },
+    "No display found to capture system audio." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se encontró ninguna pantalla para capturar el audio del sistema."
+          }
+        }
+      }
+    },
+    "No internet connection." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sin conexión a internet."
+          }
+        }
+      }
+    },
+    "No microphone available." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No hay micrófono disponible."
+          }
+        }
+      }
+    },
+    "No microphone permission. Turn it on in System Settings › Privacy › Microphone." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sin permiso para el micrófono. Actívalo en Ajustes del Sistema › Privacidad › Micrófono."
+          }
+        }
+      }
+    },
+    "No script" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sin guion"
+          }
+        }
+      }
+    },
+    "No scripts" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sin guiones"
+          }
+        }
+      }
+    },
+    "Off" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desactivado"
+          }
+        }
+      }
+    },
+    "Off: you start it with ▶ in the window" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apagado: arrancas tú con ▶ en la ventana"
+          }
+        }
+      }
+    },
+    "Ollama can't find the model %@." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ollama no encuentra el modelo %@."
+          }
+        }
+      }
+    },
+    "Ollama Cloud rejected the API key. Check it in Cue › Copilot." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ollama Cloud rechazó la API key. Revísala en Cue › Copiloto."
+          }
+        }
+      }
+    },
+    "Ollama isn't running. Open it or use Apple Intelligence." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ollama no está abierto. Ábrelo o usa Apple Intelligence."
+          }
+        }
+      }
+    },
+    "Ollama responded %lld." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ollama respondió %lld."
+          }
+        }
+      }
+    },
+    "On your Mac" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En tu Mac"
+          }
+        }
+      }
+    },
+    "Open / collapse prompter" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir / contraer prompter"
+          }
+        }
+      }
+    },
+    "Open floating window" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir ventana flotante"
+          }
+        }
+      }
+    },
+    "Open Ollama and download a model (e.g. ollama pull qwen2.5:7b)." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abre Ollama y descarga un modelo (p. ej. ollama pull qwen2.5:7b)."
+          }
+        }
+      }
+    },
+    "Open over your apps" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abierta sobre tus apps"
+          }
+        }
+      }
+    },
+    "Open panel" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir panel"
+          }
+        }
+      }
+    },
+    "Open Cue…" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir Cue…"
+          }
+        }
+      }
+    },
+    "Open the app you'll record with: Camera, Instagram, TikTok, WhatsApp…" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abre la app con la que vas a grabar: Cámara, Instagram, TikTok, WhatsApp…"
+          }
+        }
+      }
+    },
+    "Opens the prompter in the notch and starts the countdown (⌘↩)" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abre el prompter en el notch y arranca con la cuenta regresiva (⌘↩)"
+          }
+        }
+      }
+    },
+    "over another app" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sobre otra app"
+          }
+        }
+      }
+    },
+    "Paste your %@ API key" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pega tu API key de %@"
+          }
+        }
+      }
+    },
+    "Pause" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pausar"
+          }
+        }
+      }
+    },
+    "Paused" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En pausa"
+          }
+        }
+      }
+    },
+    "Paused · drag the text to move" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En pausa · arrastra el texto para moverte"
+          }
+        }
+      }
+    },
+    "People speak at about 130–160 words per minute." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una persona habla a unas 130–160 palabras por minuto."
+          }
+        }
+      }
+    },
+    "Pinch the window to resize it and drag it close to the camera." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pellizca la ventana para cambiar su tamaño y arrástrala cerca de la cámara."
+          }
+        }
+      }
+    },
+    "Play" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reproducir"
+          }
+        }
+      }
+    },
+    "Play / pause" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reproducir / pausa"
+          }
+        }
+      }
+    },
+    "Play / pause (⌃⌥ space)" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reproducir / pausa (⌃⌥ espacio)"
+          }
+        }
+      }
+    },
+    "Play / pause (space)" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reproducir / pausa (espacio)"
+          }
+        }
+      }
+    },
+    "Preparing the window…" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preparando la ventana…"
+          }
+        }
+      }
+    },
+    "Preparing Whisper…" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preparando Whisper…"
+          }
+        }
+      }
+    },
+    "Preparing Whisper… the first time takes a moment." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preparando Whisper… la primera vez tarda un poco."
+          }
+        }
+      }
+    },
+    "Press the mic and Cue will tell you what to answer." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulsa el micrófono y Cue te dirá qué responder."
+          }
+        }
+      }
+    },
+    "Previous / next script" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guion anterior / siguiente"
+          }
+        }
+      }
+    },
+    "Prompter" : {
+      "shouldTranslate" : false
+    },
+    "Prompter & copilot" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prompter y copiloto"
+          }
+        }
+      }
+    },
+    "Cue" : {
+      "shouldTranslate" : false
+    },
+    "Cue knows you're recording because iOS pauses its audio when another app starts recording. If an app doesn't do this, tap **▶** in the window. While the window is open, your music is paused." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cue nota que grabas porque iOS le pausa el audio cuando otra app empieza a grabar. Si alguna app no lo hace, toca **▶** en la ventana. Mientras la ventana está abierta, tu música se pausa."
+          }
+        }
+      }
+    },
+    "Cue needs to restart to change the language." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cue necesita reiniciarse para cambiar el idioma."
+          }
+        }
+      }
+    },
+    "Cue starts on its own when another app turns on the camera" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cue arranca solo cuando otra app enciende la cámara"
+          }
+        }
+      }
+    },
+    "Quit Cue" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salir de Cue"
+          }
+        }
+      }
+    },
+    "Read" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leer"
+          }
+        }
+      }
+    },
+    "Reading" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lectura"
+          }
+        }
+      }
+    },
+    "Ready to open" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lista para abrir"
+          }
+        }
+      }
+    },
+    "Record" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grabar"
+          }
+        }
+      }
+    },
+    "Recording" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grabando"
+          }
+        }
+      }
+    },
+    "Recording detected" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grabación detectada"
+          }
+        }
+      }
+    },
+    "Recording ended" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La grabación terminó"
+          }
+        }
+      }
+    },
+    "Refresh models" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actualizar modelos"
+          }
+        }
+      }
+    },
+    "Remove from session" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quitar de la sesión"
+          }
+        }
+      }
+    },
+    "Rename “%@”…" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Renombrar “%@”…"
+          }
+        }
+      }
+    },
+    "Rename session" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Renombrar sesión"
+          }
+        }
+      }
+    },
+    "Restart Cue now" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reiniciar Cue ahora"
+          }
+        }
+      }
+    },
+    "Ring light" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luz de anillo"
+          }
+        }
+      }
+    },
+    "Save" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guardar"
+          }
+        }
+      }
+    },
+    "Script" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guion"
+          }
+        }
+      }
+    },
+    "Scripts" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guiones"
+          }
+        }
+      }
+    },
+    "Session" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sesión"
+          }
+        }
+      }
+    },
+    "Session %lld" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sesión %lld"
+          }
+        }
+      }
+    },
+    "Sessions" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sesiones"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes"
+          }
+        }
+      }
+    },
+    "Settings…" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes…"
+          }
+        }
+      }
+    },
+    "Show / hide the panel (⌃⌥P)" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar / ocultar el panel (⌃⌥P)"
+          }
+        }
+      }
+    },
+    "Show all scripts" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ver todos los guiones"
+          }
+        }
+      }
+    },
+    "Show Copilot" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar Copiloto"
+          }
+        }
+      }
+    },
+    "Show prompter" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar prompter"
+          }
+        }
+      }
+    },
+    "Show script" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar guion"
+          }
+        }
+      }
+    },
+    "Show tab in the notch" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar pestaña en el notch"
+          }
+        }
+      }
+    },
+    "skips the countdown" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sin cuenta regresiva"
+          }
+        }
+      }
+    },
+    "Slower" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Más lento"
+          }
+        }
+      }
+    },
+    "Soft" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suave"
+          }
+        }
+      }
+    },
+    "Spanish" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Español"
+          }
+        }
+      }
+    },
+    "Speed" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velocidad"
+          }
+        }
+      }
+    },
+    "Speed (words per minute)" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velocidad (palabras por minuto)"
+          }
+        }
+      }
+    },
+    "Start" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empezar"
+          }
+        }
+      }
+    },
+    "Start listening" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empezar a escuchar"
+          }
+        }
+      }
+    },
+    "Start recording and tap **▶** in the window. %@ and the text starts." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empieza a grabar y toca **▶** en la ventana. %@ y el texto arranca."
+          }
+        }
+      }
+    },
+    "Stop listening (⌃⌥L)" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dejar de escuchar (⌃⌥L)"
+          }
+        }
+      }
+    },
+    "Stop recording" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detener grabación"
+          }
+        }
+      }
+    },
+    "Stored in the macOS Keychain, not in files." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se guarda en el llavero de macOS, no en archivos."
+          }
+        }
+      }
+    },
+    "Suggest only when the other person finishes" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sugerir solo al terminar la otra persona"
+          }
+        }
+      }
+    },
+    "Switch script (⌃⌥← / ⌃⌥→)" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambiar de guion (⌃⌥← / ⌃⌥→)"
+          }
+        }
+      }
+    },
+    "Switch session" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambiar de sesión"
+          }
+        }
+      }
+    },
+    "Switch to session 1–9" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambiar a la sesión 1–9"
+          }
+        }
+      }
+    },
+    "System audio stopped: %@" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se detuvo el audio del sistema: %@"
+          }
+        }
+      }
+    },
+    "Tap **Open floating window**." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toca **Abrir ventana flotante**."
+          }
+        }
+      }
+    },
+    "Tap record: counts %lld and starts on its own" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toca grabar: cuenta %lld y arranca solo"
+          }
+        }
+      }
+    },
+    "Tap record: the text starts with the recording" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toca grabar: el texto arranca con la grabación"
+          }
+        }
+      }
+    },
+    "Tap the window and press ▶" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toca la ventana y dale ▶"
+          }
+        }
+      }
+    },
+    "Text size" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tamaño de letra"
+          }
+        }
+      }
+    },
+    "The key is in the macOS Keychain. The transcript and your context are sent to %@ to generate each answer." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La key está en el llavero de macOS. La transcripción y tu contexto se envían a %@ para generar cada respuesta."
+          }
+        }
+      }
+    },
+    "The local AI is reading your context. The first time is slow; after that it's almost instant." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La IA local está leyendo tu contexto. La primera vez tarda; las siguientes son casi inmediatas."
+          }
+        }
+      }
+    },
+    "The recording couldn't be saved" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La grabación no se pudo guardar"
+          }
+        }
+      }
+    },
+    "Them" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ellos"
+          }
+        }
+      }
+    },
+    "There's no audio to listen to." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No hay audio que escuchar."
+          }
+        }
+      }
+    },
+    "Thinking…" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pensando…"
+          }
+        }
+      }
+    },
+    "Thinking… %lld s" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pensando… %lld s"
+          }
+        }
+      }
+    },
+    "This device has no camera available. You can still try the prompter." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este dispositivo no tiene cámara disponible. Puedes probar el prompter igual."
+          }
+        }
+      }
+    },
+    "This iPhone doesn't support floating windows" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este iPhone no admite ventanas flotantes"
+          }
+        }
+      }
+    },
+    "This Mac doesn't support Apple Intelligence." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este Mac no es compatible con Apple Intelligence."
+          }
+        }
+      }
+    },
+    "This provider has no compatible API." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proveedor sin API compatible."
+          }
+        }
+      }
+    },
+    "This session is empty. Create a new script." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta sesión está vacía. Crea un guion nuevo."
+          }
+        }
+      }
+    },
+    "This session is empty. Create a script or move one here from “All”." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta sesión está vacía. Crea un guion o muévelo aquí desde “Todos”."
+          }
+        }
+      }
+    },
+    "Time to get settled before the text starts moving." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiempo para acomodarte antes de que el texto empiece a moverse."
+          }
+        }
+      }
+    },
+    "Title" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Título"
+          }
+        }
+      }
+    },
+    "to ask for a suggestion now" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "para pedir una sugerencia ahora"
+          }
+        }
+      }
+    },
+    "To hear the other person, allow Cue “Screen & System Audio Recording” in System Settings › Privacy." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para oír a la otra persona, permite a Cue “Grabación de pantalla y audio del sistema” en Ajustes del Sistema › Privacidad."
+          }
+        }
+      }
+    },
+    "Try it here" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Probar aquí"
+          }
+        }
+      }
+    },
+    "Turn on Apple Intelligence in System Settings." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activa Apple Intelligence en Ajustes del Sistema."
+          }
+        }
+      }
+    },
+    "Untitled" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sin título"
+          }
+        }
+      }
+    },
+    "Use headphones so your mic doesn't pick up the other person." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa audífonos: así tu micrófono no repite lo que dice la otra persona."
+          }
+        }
+      }
+    },
+    "Vertical" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vertical"
+          }
+        }
+      }
+    },
+    "Video saved to Photos" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video guardado en Fotos"
+          }
+        }
+      }
+    },
+    "Vivid" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vívido"
+          }
+        }
+      }
+    },
+    "Waiting for %@…" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esperando a %@…"
+          }
+        }
+      }
+    },
+    "Waiting for camera" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esperando cámara"
+          }
+        }
+      }
+    },
+    "Waiting for you to record…" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esperando que grabes…"
+          }
+        }
+      }
+    },
+    "Waiting for your voice…" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esperando tu voz…"
+          }
+        }
+      }
+    },
+    "Warm" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cálido"
+          }
+        }
+      }
+    },
+    "Welcome to Cue" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bienvenido a Cue"
+          }
+        }
+      }
+    },
+    "When it's off, the prompter only appears when you open it (⌃⌥P, the menu bar or a click on the notch) and hides completely when you close it." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desactivada, el prompter solo aparece cuando lo abres (⌃⌥P, la barra de menús o un clic en el notch) y se oculta del todo al cerrarlo."
+          }
+        }
+      }
+    },
+    "When the camera or mic is in use" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Al usar cámara o micrófono"
+          }
+        }
+      }
+    },
+    "When the camera turns on" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Al encender la cámara"
+          }
+        }
+      }
+    },
+    "When you start recording in another app, it counts down and starts on its own" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuando empiezas a grabar en otra app, cuenta y arranca solo"
+          }
+        }
+      }
+    },
+    "When Zoom, FaceTime, QuickTime, OBS or another app turns on the camera, Cue shows your script and starts the countdown. It pauses when the camera turns off." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuando Zoom, FaceTime, QuickTime, OBS u otra app enciende la cámara, Cue muestra tu guion y arranca con la cuenta regresiva. Al apagarla, se pausa."
+          }
+        }
+      }
+    },
+    "Whisper" : {
+      "shouldTranslate" : false
+    },
+    "Whisper and local AI · nothing leaves your Mac" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Whisper e IA local · nada sale de tu Mac"
+          }
+        }
+      }
+    },
+    "Whisper on your Mac · answers by %@" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Whisper en tu Mac · respuestas con %@"
+          }
+        }
+      }
+    },
+    "Who you are, what the conversation is about, your goals and the facts the AI should know." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quién eres, de qué va la conversación, tus objetivos y los datos que la IA debe conocer."
+          }
+        }
+      }
+    },
+    "Window shape" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forma de la ventana"
+          }
+        }
+      }
+    },
+    "with Cue" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "con Cue"
+          }
+        }
+      }
+    },
+    "wpm" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ppm"
+          }
+        }
+      }
+    },
+    "Write or paste your script here…" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escribe o pega tu guion aquí…"
+          }
+        }
+      }
+    },
+    "You" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tú"
+          }
+        }
+      }
+    },
+    "your Mac" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tu Mac"
+          }
+        }
+      }
+    },
+    "Your script is in the floating window.\nOpen the app you'll record with." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu guion está en la ventana flotante.\nAbre la app con la que vas a grabar."
+          }
+        }
+      }
+    },
+    "Your scripts aren't deleted: they move to “All”, with no session." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tus guiones no se borran: pasan a “Todos”, sin sesión."
+          }
+        }
+      }
+    },
+    "Your teleprompter, ready to record" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu teleprompter, listo para grabar"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
