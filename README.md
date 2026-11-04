@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://manuekle.github.io/cue/"><b>Website</b></a> ·
-  <a href="https://github.com/Manuekle/cue/releases/latest"><b>Download for Mac</b></a> ·
+  <a href="https://github.com/Manuekle/cue/releases/latest/download/Cue-macOS.zip"><b>Download for Mac</b></a> ·
   <a href="#build-it"><b>Build it</b></a>
 </p>
 
