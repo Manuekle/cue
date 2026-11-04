@@ -1,101 +1,101 @@
 <p align="center">
-  <img src="docs/images/icon.png" width="112" height="112" alt="Icono de Cue">
+  <img src="docs/images/icon.png" width="112" height="112" alt="Cue app icon">
 </p>
 
 <h1 align="center">Cue</h1>
 
 <p align="center">
-  Tu guion, justo debajo de la cámara.<br>
-  Teleprompter para <b>Mac</b>, <b>iPhone</b> y <b>iPad</b>: vive en el notch, arranca solo cuando grabas y nadie lo ve cuando compartes pantalla.
+  Your script, right under the camera.<br>
+  A teleprompter for <b>Mac</b>, <b>iPhone</b> and <b>iPad</b>. It lives in your notch, starts itself when you hit record, and nobody sees it when you share your screen.
 </p>
 
 <p align="center">
-  <a href="https://manuekle.github.io/cue/"><b>Web</b></a> ·
-  <a href="https://github.com/Manuekle/cue/releases/latest"><b>Descargar para Mac</b></a> ·
-  <a href="#compilar"><b>Compilar</b></a>
+  <a href="https://manuekle.github.io/cue/"><b>Website</b></a> ·
+  <a href="https://github.com/Manuekle/cue/releases/latest"><b>Download for Mac</b></a> ·
+  <a href="#build-it"><b>Build it</b></a>
 </p>
 
 <p align="center">
-  <img src="docs/images/hero.webp" alt="Cue abierto bajo el notch de un MacBook durante una llamada de Google Meet">
+  <img src="docs/images/hero.webp" alt="Cue open under the notch of a MacBook during a Google Meet call">
 </p>
 
-> Antes se llamaba **Pronter**. El nombre cambió a Cue; tus guiones, ajustes y permisos se conservan.
+> Cue used to be called **Pronter**. Your scripts, settings and permissions carry over.
 
 ## Mac
 
-<img src="docs/images/auto-start.webp" alt="Cue contando 3, 2, 1 bajo el notch al encenderse la cámara">
+<img src="docs/images/auto-start.webp" alt="Cue counting 3, 2, 1 under the notch as the camera turns on">
 
-- **Arranca solo.** Cuando cualquier app enciende la cámara (Zoom, Meet, Teams, FaceTime, QuickTime, OBS…), Cue abre el guion bajo el notch, cuenta 3, 2, 1 y empieza a avanzar. Al apagar la cámara, se pausa. También puede usar el micrófono como señal.
-- **Vive en el notch.** Una pestaña negra sale del notch con el estado y el tiempo. Clic en el notch para abrir el prompter y otro clic (o Esc) para guardarlo. En Macs sin notch queda pegada bajo la barra de menús.
-- **Invisible al compartir.** La ventana se excluye de la captura de pantalla: no aparece en Meet, Zoom ni en grabaciones. Solo la ves tú.
-- **Siempre encima**, también sobre apps a pantalla completa, y sigue activa en la barra de menús aunque cierres la ventana.
+- **Starts on its own.** When any app turns on the camera (Zoom, Meet, Teams, FaceTime, QuickTime, OBS…), Cue opens your script under the notch, counts 3, 2, 1 and starts scrolling. Camera off, script paused. The microphone can be the trigger instead.
+- **Lives in your notch.** A small black tab grows out of the notch with the status and the time. Click the notch to open the prompter, click again (or press Esc) to tuck it away. On Macs without a notch it sits just below the menu bar.
+- **Invisible when you share.** The prompter is left out of screen capture, so it never shows up in Meet, Zoom or a screen recording. Only you see it.
+- **Always there.** It stays above full-screen apps and keeps running in the menu bar after you close the window.
 
-<img src="docs/images/cards.webp" alt="Pestaña del notch, comparación al compartir pantalla, modo Sigue mi voz y atajos de teclado">
+<img src="docs/images/cards.webp" alt="The notch tab, a screen-share comparison, Follows my voice and the keyboard shortcuts">
 
-### Copiloto
+### Copilot
 
-<img src="docs/images/copilot.webp" alt="Panel del Copiloto con una respuesta sugerida y la transcripción de la llamada">
+<img src="docs/images/copilot.webp" alt="The Copilot panel with a suggested reply and the live transcript">
 
-Escucha la llamada y te dice qué responder.
+Cue listens to the call and tells you what to say.
 
-1. En la barra lateral, **Copiloto**: escribe un contexto (quién eres, de qué va la llamada, tus objetivos y datos clave).
-2. Pulsa el micrófono. **Whisper** (WhisperKit, en tu Mac) transcribe tu micrófono (**Tú**) y el audio del sistema (**Ellos**).
-3. Cuando la otra persona termina de hablar, aparece una respuesta de 1 a 3 frases lista para leer, en el idioma de la conversación. También con ⌃⌥↩.
+1. Open **Copilot** in the sidebar and write some context: who you are, what the call is about, your goals and the numbers you need.
+2. Press the mic. **Whisper** (WhisperKit, on your Mac) transcribes your microphone (**You**) and the system audio (**Them**).
+3. When the other person stops talking, a one-to-three-sentence reply appears, ready to read, in the language of the conversation. Press ⌃⌥↩ to ask at any time.
 
-| Motor | Dónde corre |
+| Engine | Where it runs |
 |---|---|
-| Apple Intelligence (macOS 26+) | En tu Mac |
-| Ollama (`localhost:11434`, p. ej. `qwen2.5:7b`) | En tu Mac |
-| OpenAI, Gemini, Claude, Muse, Ollama Cloud | En la nube, con tu propia clave (guardada en el Llavero) |
+| Apple Intelligence (macOS 26+) | On your Mac |
+| Ollama (`localhost:11434`, e.g. `qwen2.5:7b`) | On your Mac |
+| OpenAI, Gemini, Claude, Muse, Ollama Cloud | In the cloud, with your own key (stored in the Keychain) |
 
-Whisper se descarga la primera vez (Rápido 145 MB, Equilibrado 480 MB, Preciso 630 MB) en `~/Library/Application Support/Pronter/Models`. Pide permiso de **Micrófono** y de **Grabación de pantalla y audio del sistema** (solo se usa el audio). Usa audífonos para que tu micrófono no repita a la otra persona.
+Whisper downloads on first use (Fast 145 MB, Balanced 480 MB, Accurate 630 MB) to `~/Library/Application Support/Pronter/Models`. Cue asks for **Microphone** and **Screen & System Audio Recording** access; only the audio is used. Wear headphones so your mic doesn't pick up the other person.
 
-### Atajos
+### Shortcuts
 
-Funcionan desde cualquier app, incluso a pantalla completa.
+They work from any app, even in full screen.
 
-| Atajo | Acción |
+| Shortcut | Action |
 |---|---|
-| ⌃⌥ Espacio | Reproducir / pausa |
-| ⌃⌥ P | Abrir / guardar el prompter |
-| ⌃⌥ R | Volver al inicio |
-| ⌃⌥ ↑ / ↓ | Más rápido / más lento |
-| ⌃⌥ ← / → | Guion anterior / siguiente |
-| ⌃⌥ ↩ | Copiloto: ¿qué digo? |
-| ⌃⌥ L | Copiloto: escuchar / detener |
-| ⌥⌘ 1–9 | Ir al guion 1–9 de la lista |
-| ⌃⌥⌘ 1–9 / 0 | Cambiar a la sesión 1–9 / ver todos |
+| ⌃⌥ Space | Play / pause |
+| ⌃⌥ P | Open / tuck away the prompter |
+| ⌃⌥ R | Back to the start |
+| ⌃⌥ ↑ / ↓ | Faster / slower |
+| ⌃⌥ ← / → | Previous / next script |
+| ⌃⌥ ↩ | Copilot: what do I say? |
+| ⌃⌥ L | Copilot: listen / stop |
+| ⌥⌘ 1–9 | Go to script 1–9 in the list |
+| ⌃⌥⌘ 1–9 / 0 | Switch to session 1–9 / show all |
 
-Con el prompter al frente: espacio, ↑/↓, ←/→, 1–9, + / −, R, M (espejo) y Esc. La rueda o el trackpad mueven el texto.
+With the prompter in front: Space, ↑/↓, ←/→, 1–9, + / −, R, M (mirror) and Esc. The scroll wheel or trackpad moves the text.
 
-## iPhone y iPad
+## iPhone and iPad
 
 <p align="center">
-  <img src="docs/images/iphone-floating.webp" width="260" alt="Ventana flotante de Cue sobre la app Cámara">
+  <img src="docs/images/iphone-floating.webp" width="260" alt="Cue's floating window over the Camera app">
   &nbsp;&nbsp;&nbsp;
-  <img src="docs/images/iphone-camera.webp" width="260" alt="Cámara de Cue con el guion junto al lente">
+  <img src="docs/images/iphone-camera.webp" width="260" alt="Cue's camera with the script next to the lens">
 </p>
 
-| Modo | Para qué sirve |
+| Mode | What it does |
 |---|---|
-| **Flotante** | El guion en una ventana Picture in Picture encima de **cualquier app**: Cámara, Instagram, TikTok, WhatsApp, Zoom… Al grabar en esa app, Cue lo nota, cuenta y arranca solo. Al parar, se pausa. Horizontal o vertical. |
-| **Grabar** | La cámara de Cue con el guion junto al lente. Cuenta regresiva y luego el video y el texto arrancan a la vez. **Sigue mi voz** avanza mientras hablas y espera cuando callas. Estilos de color (Cálido, Cine, B/N…), luz de estudio y fondo desenfocado tipo retrato. El video va a Fotos. |
-| **Leer** | Prompter a pantalla completa, sin cámara. |
+| **Floating** | Puts your script in a Picture in Picture window on top of **any app**: Camera, Instagram, TikTok, WhatsApp, Zoom… Hit record in that app and Cue notices, counts down and starts on its own. Stop recording and it pauses. Horizontal or vertical. |
+| **Record** | Cue's own camera, with the script next to the lens. A countdown, then the video and the text start together. **Follows my voice** scrolls while you talk and waits when you pause. Color looks (Warm, Cinema, B&W…), a studio light and a portrait-style blurred background. Videos go to Photos. |
+| **Read** | A full-screen prompter, no camera. |
 
-Mientras lees: toca para pausar, desliza para avanzar o volver, pellizca para cambiar el tamaño, y usa − / + para la velocidad en palabras por minuto.
+While reading: tap to pause, swipe to jump back or ahead, pinch to resize the text, and use − / + to change the speed in words per minute.
 
-**Cómo sabe que estás grabando:** iOS no avisa a una app cuando otra graba. Mientras la ventana flotante está abierta, Cue mantiene una sesión de audio; cuando otra app empieza a grabar, iOS la interrumpe, y esa es la señal para contar y arrancar. Si una app no lo hace, toca ▶.
+**How it knows you're recording:** iOS doesn't tell an app when another one starts recording. While the floating window is open, Cue keeps an audio session running. When another app starts recording, iOS interrupts that session, and that's the signal to count down and start. If an app doesn't do this, tap ▶.
 
-## Sesiones
+## Sessions
 
-Agrupa tus guiones por proyecto, canal o cliente. Cada guion pertenece a una sesión; **Todos** muestra todos. Los guiones nuevos se crean en la sesión activa. Eliminar una sesión no borra sus guiones: pasan a **Todos**.
+Group your scripts by project, channel or client. Each script belongs to one session; **All** shows every script. New scripts are created in the active session. Deleting a session doesn't delete its scripts: they move to **All**.
 
-- **iPhone/iPad:** barra de sesiones sobre la lista y menú de carpeta para crear, renombrar o eliminar. Mantén pulsado un guion → *Mover a sesión*.
-- **Mac:** selector en la barra lateral y en el menú de la barra de menús. Clic derecho en un guion → *Mover a sesión*.
+- **iPhone/iPad:** the session bar above the list, and the folder menu to create, rename or delete. Long-press a script → *Move to session*.
+- **Mac:** the picker in the sidebar and in the menu bar menu. Right-click a script → *Move to session*.
 
-## Compilar
+## Build it
 
-Requiere Xcode 16 o posterior, macOS 14+ e iOS 17+. El proyecto se genera con [XcodeGen](https://github.com/yonaskolb/XcodeGen) desde `project.yml`:
+Requires Xcode 16 or later, macOS 14+ and iOS 17+. The project is generated with [XcodeGen](https://github.com/yonaskolb/XcodeGen) from `project.yml`:
 
 ```bash
 xcodegen generate
@@ -105,29 +105,29 @@ xcodegen generate
 open Pronter.xcodeproj
 ```
 
-- **Mac:** esquema `PronterMac` → Run. El resultado es `Cue.app`; cópialo a `/Applications` para dejarlo instalado.
-- **iPhone/iPad:** esquema `Pronter`, tu dispositivo como destino → Run.
+- **Mac:** scheme `PronterMac` → Run. The build is `Cue.app`; copy it to `/Applications` to keep it installed.
+- **iPhone/iPad:** scheme `Pronter`, your device as the destination → Run.
 
-La prueba de punta a punta en un iPhone real (abre la ventana flotante, graba con la app Cámara y comprueba que el texto arrancó solo):
+End-to-end test on a real iPhone (it opens the floating window, records with the Camera app and checks the text started on its own):
 
 ```bash
-xcodebuild test -project Pronter.xcodeproj -scheme Pronter -destination 'id=<UDID del iPhone>' -allowProvisioningUpdates
+xcodebuild test -project Pronter.xcodeproj -scheme Pronter -destination 'id=<iPhone UDID>' -allowProvisioningUpdates
 ```
 
-Los textos en español viven en `Shared/Localizable.xcstrings`. Después de añadir textos, compila con `SWIFT_EMIT_LOC_STRINGS=YES` y ejecuta `tools/sync-strings.py`.
+English is the base language; Spanish lives in `Shared/Localizable.xcstrings`. After adding strings, build with `SWIFT_EMIT_LOC_STRINGS=YES` and run `tools/sync-strings.py`.
 
-## Estructura
+## Project layout
 
-| Carpeta | Contenido |
+| Folder | What's inside |
 |---|---|
-| `Shared/` | Guiones, sesiones, ajustes, motor del prompter (cuenta regresiva, velocidad, posición) y la vista del texto |
-| `Shared/Theme.swift` | Estilo visual: vidrio negro, azul `#0A84FF`, fuentes SN Pro, Hanken Grotesk y Geist Mono, íconos Hugeicons |
-| `macOS/` | Panel del notch, detección de cámara y micrófono, atajos globales |
-| `macOS/Copilot/` | Captura de audio, Whisper (WhisperKit) y los motores de IA |
-| `iOS/` | Cámara con filtros, ventana flotante (PiP), detector de grabación y lector |
-| `site/` | La web, HTML estático publicado en GitHub Pages |
-| `tools/` | Conversión de íconos Hugeicons y sincronización de textos |
+| `Shared/` | Scripts, sessions, settings, the prompter engine (countdown, speed, position) and the text view |
+| `Shared/Theme.swift` | Visual style: black glass, blue `#0A84FF`, SN Pro, Hanken Grotesk and Geist Mono, Hugeicons |
+| `macOS/` | The notch panel, camera and microphone detection, global shortcuts |
+| `macOS/Copilot/` | Audio capture, Whisper (WhisperKit) and the AI engines |
+| `iOS/` | Camera with filters, floating window (PiP), recording detection and the reader |
+| `site/` | The website, static HTML published to GitHub Pages |
+| `tools/` | Hugeicons conversion, string sync, and `tools/og/` for the social preview image |
 
-## Créditos
+## Credits
 
-Fuentes SN Pro, Hanken Grotesk y Geist Mono (OFL). Íconos de [Hugeicons](https://hugeicons.com) (MIT). Logos de apps en la web desde [svgl](https://svgl.app).
+Fonts: SN Pro, Hanken Grotesk and Geist Mono (OFL). Icons: [Hugeicons](https://hugeicons.com) (MIT). App logos on the website: [svgl](https://svgl.app).

@@ -1,0 +1,55 @@
+<!doctype html>
+<!-- Source of site/assets/img/og.jpg (1200x630). Render: node tools/og/render.mjs -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: "SN Pro"; src: url("../../site/assets/fonts/SNPro-Semibold.ttf"); font-weight: 600; }
+  @font-face { font-family: "SN Pro"; src: url("../../site/assets/fonts/SNPro-Medium.ttf"); font-weight: 500; }
+  @font-face { font-family: "Hanken Grotesk"; src: url("../../site/assets/fonts/HankenGrotesk-Medium.ttf"); font-weight: 500; }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    position: relative; color: #fff; font-family: "SN Pro", system-ui, sans-serif;
+    background:
+      radial-gradient(40% 40% at 18% 0%, rgba(255,255,255,.32), rgba(255,255,255,0) 72%),
+      radial-gradient(30% 60% at 0% 40%, rgba(120,214,255,.4), rgba(120,214,255,0) 70%),
+      radial-gradient(50% 50% at 75% 90%, rgba(0,70,210,.5), rgba(0,70,210,0) 72%),
+      linear-gradient(160deg, #00a3ff 0%, #0a84ff 45%, #0066ee 100%);
+  }
+  /* drafting guides, like the site hero */
+  .guide { position: absolute; background: repeating-linear-gradient(90deg, rgba(255,255,255,.3) 0 5px, transparent 5px 10px); height: 1px; left: 0; right: 0; }
+  .guide.v { width: 1px; height: auto; top: 0; bottom: 0; left: 64px; right: auto; z-index: 0; background: repeating-linear-gradient(180deg, rgba(255,255,255,.3) 0 5px, transparent 5px 10px); }
+  .x { position: absolute; width: 15px; height: 15px; margin: -7px 0 0 -7px;
+    background: linear-gradient(#fff, #fff) center / 15px 1px no-repeat, linear-gradient(#fff, #fff) center / 1px 15px no-repeat; }
+  .copy { position: absolute; left: 96px; top: 80px; width: 640px; }
+  /* headline framed by dashed lines that run off the canvas, + marks at the left corners */
+  .frame { position: relative; margin-top: 56px; padding: 18px 0; }
+  .frame::before { content: ""; position: absolute; left: -200px; right: -20px; top: 0; bottom: 0;
+    background: repeating-linear-gradient(90deg, rgba(255,255,255,.3) 0 5px, transparent 5px 10px) top / 100% 1px no-repeat,
+                repeating-linear-gradient(90deg, rgba(255,255,255,.3) 0 5px, transparent 5px 10px) bottom / 100% 1px no-repeat; }
+  .frame .x.t { left: -32px; top: 0; } .frame .x.b { left: -32px; top: 100%; }
+  .copy { z-index: 2; }
+  .brand { display: flex; align-items: center; gap: 14px; font-size: 34px; font-weight: 600; letter-spacing: -0.03em; }
+  .brand img { width: 56px; height: 56px; filter: drop-shadow(0 8px 16px rgba(0,30,100,.35)); }
+  h1 { font-size: 58px; line-height: 1.02; letter-spacing: -0.045em; font-weight: 600; }
+  h1 span { color: rgba(255,255,255,.68); }
+  p { margin-top: 26px; font-family: "Hanken Grotesk", sans-serif; font-weight: 500; font-size: 24px; line-height: 1.4; color: rgba(255,255,255,.9); }
+  .url { position: absolute; left: 96px; bottom: 54px; font-size: 20px; font-weight: 500; color: rgba(255,255,255,.75); }
+  .mac { position: absolute; right: -230px; top: 150px; width: 760px; z-index: 1;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 7%), linear-gradient(180deg, transparent 0, #000 9%, #000 86%, transparent 100%);
+    -webkit-mask-composite: source-in; mask-composite: intersect; }
+</style>
+</head>
+<body>
+  <div class="guide v"></div>
+
+  <div class="copy">
+    <div class="brand"><img src="../../site/assets/img/icon-512.png" alt="">Cue</div>
+    <div class="frame"><i class="x t"></i><i class="x b"></i><h1>Your script,<br><span>right under the camera.</span></h1></div>
+    <p>Teleprompter for Mac, iPhone and iPad. Starts when you record. Invisible when you share.</p>
+  </div>
+  <div class="url">manuekle.github.io/cue</div>
+  <img class="mac" src="mac.webp" alt="">
+</body>
+</html>
