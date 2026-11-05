@@ -72,7 +72,7 @@ final class MicrophoneCapture {
 }
 
 /// El audio que suena en el Mac (la otra persona en Zoom, Meet, FaceTime…), con ScreenCaptureKit.
-/// Excluye el audio de Pronter. Pide el permiso "Grabación de pantalla y audio del sistema".
+/// Excluye el audio de Cue. Pide el permiso "Grabación de pantalla y audio del sistema".
 final class SystemAudioCapture: NSObject, SCStreamOutput, SCStreamDelegate {
     private var stream: SCStream?
     private let resampler = Resampler()
@@ -131,11 +131,12 @@ private extension CMSampleBuffer {
     }
 }
 
-/// Corta el audio en frases con un detector de voz por energía: cierra la frase tras ~0,7 s de silencio
-/// o a los 14 s. Úsalo siempre desde el mismo hilo.
+/// Corta el audio en frases con un detector de voz por energía: cierra la frase tras un silencio corto
+/// (0,7 s por defecto) o a los 14 s. Úsalo siempre desde el mismo hilo.
 final class SpeechSegmenter {
     private static let frameLength = 480          // 30 ms a 16 kHz
-    private static let silenceToClose = 23        // ≈ 0,7 s
+    /// Tramos de 30 ms de silencio que cierran la frase.
+    private let silenceToClose: Int
     private static let minSpeechFrames = 12       // ≈ 0,36 s de voz
     private static let maxSamples = 16_000 * 14
     private static let preRollFrames = 10         // 0,3 s antes de que empiece la voz
@@ -150,6 +151,11 @@ final class SpeechSegmenter {
     private(set) var level: Float = 0
 
     var onSegment: (([Float]) -> Void)?
+
+    /// `silence`: segundos de silencio que cierran una frase.
+    init(silence: Double = 0.7) {
+        silenceToClose = max(8, Int((silence / 0.03).rounded()))
+    }
 
     func append(_ samples: [Float]) {
         pending.append(contentsOf: samples)
@@ -188,7 +194,7 @@ final class SpeechSegmenter {
         } else {
             silenceFrames += 1
         }
-        if silenceFrames >= Self.silenceToClose || current.count >= Self.maxSamples { flush() }
+        if silenceFrames >= silenceToClose || current.count >= Self.maxSamples { flush() }
     }
 
     func flush() {

@@ -33,16 +33,16 @@ struct SessionMenu<MenuLabel: View>: View {
             }
 
             Divider()
-            Button("New session…", systemImage: "plus") {
+            Button("New session…", image: .hiPlus) {
                 draftName = ""
                 showsNew = true
             }
             if let current = store.currentSession {
-                Button("Rename “\(current.name)”…", systemImage: "pencil") {
+                Button("Rename “\(current.name)”…", image: .hiPencil) {
                     draftName = current.name
                     showsRename = true
                 }
-                Button("Delete “\(current.name)”…", systemImage: "trash", role: .destructive) {
+                Button("Delete “\(current.name)”…", image: .hiDelete, role: .destructive) {
                     showsDelete = true
                 }
             }
@@ -87,7 +87,7 @@ struct SessionMenu<MenuLabel: View>: View {
     @ViewBuilder
     private func checkLabel(_ text: LocalizedStringKey, selected: Bool) -> some View {
         if selected {
-            Label(text, systemImage: "checkmark")
+            Label(text, image: "hi-tick")
         } else {
             Text(text)
         }
@@ -101,13 +101,13 @@ struct MoveToSessionMenu: View {
     var onMoved: () -> Void = {}
 
     var body: some View {
-        Menu("Move to session", systemImage: "folder") {
+        Menu("Move to session", image: .hiFolder) {
             ForEach(store.sessions) { session in
                 Button {
                     move(to: session.id)
                 } label: {
                     if script.sessionID == session.id {
-                        Label(session.name, systemImage: "checkmark")
+                        Label(session.name, image: "hi-tick")
                     } else {
                         Text(session.name)
                     }

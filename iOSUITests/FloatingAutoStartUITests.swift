@@ -54,14 +54,14 @@ final class FloatingAutoStartUITests: XCTestCase {
 
     // MARK: Ayudantes
 
-    /// Permite el micrófono a Pronter; cualquier otro permiso (ubicación de Cámara, etc.) se rechaza.
+    /// Permite el micrófono a Cue; cualquier otro permiso (ubicación de Cámara, etc.) se rechaza.
     private func answerSystemAlerts(for seconds: TimeInterval) {
         let deadline = Date().addingTimeInterval(seconds)
         while Date() < deadline {
             let alert = springboard.alerts.firstMatch
             if alert.exists {
-                let isPronter = alert.label.localizedCaseInsensitiveContains("Cue")
-                let choices = isPronter ? ["Permitir", "Allow", "OK"] : ["No permitir", "Don’t Allow", "Don't Allow", "Ahora no", "OK"]
+                let isCue = alert.label.localizedCaseInsensitiveContains("Cue")
+                let choices = isCue ? ["Permitir", "Allow", "OK"] : ["No permitir", "Don’t Allow", "Don't Allow", "Ahora no", "OK"]
                 if let button = choices.lazy.map({ alert.buttons[$0] }).first(where: { $0.exists }) {
                     button.tap()
                 } else {

@@ -33,7 +33,10 @@ final class MacAppModel: ObservableObject {
     }
 
     /// Qué muestra el panel flotante: el guion o el Copiloto.
-    @Published var panelMode: PanelMode = .script
+    @Published var panelMode: PanelMode = .script {
+        // Al pasar al Copiloto, Whisper empieza a cargar para estar listo cuando pulses el micrófono.
+        didSet { if panelMode == .copilot { MainActor.assumeIsolated { copilot.prewarm() } } }
+    }
     /// La ventana principal muestra la configuración del Copiloto en vez del editor.
     @Published var showsCopilotSetup = false
 

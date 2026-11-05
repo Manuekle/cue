@@ -13,7 +13,7 @@ struct PrompterSettingsForm: View {
                         Text(verbatim: option.nativeName).tag(option)
                     }
                 } label: {
-                    RowLabel(title: "Language", systemImage: "globe")
+                    RowLabel(title: "Language", icon: .globe)
                 }
                 .onChange(of: language) { _, newValue in AppLanguage.choose(newValue) }
                 if language != AppLanguage.launched {
@@ -33,18 +33,18 @@ struct PrompterSettingsForm: View {
 
             Section {
                 SliderRow(title: "Speed", value: String(localized: "\(Int(settings.wordsPerMinute)) words/min"),
-                          systemImage: "gauge.with.dots.needle.33percent") {
+                          icon: .speed) {
                     Slider(value: $settings.wordsPerMinute, in: PrompterSettings.speedRange, step: 5)
                 }
                 SliderRow(title: "Text size", value: "\(Int(settings.fontSize))",
-                          systemImage: "textformat.size") {
+                          icon: .textSize) {
                     Slider(value: $settings.fontSize, in: PrompterSettings.fontRange, step: 1)
                 }
                 Picker(selection: $settings.centered) {
                     Text("Centered").tag(true)
                     Text("Left").tag(false)
                 } label: {
-                    RowLabel(title: "Alignment", systemImage: "text.aligncenter")
+                    RowLabel(title: "Alignment", icon: .textAlignCenter)
                 }
             } header: {
                 SectionTitle("Reading")
@@ -58,7 +58,7 @@ struct PrompterSettingsForm: View {
                         Text(seconds == 0 ? "No countdown" : "\(seconds) seconds").tag(seconds)
                     }
                 } label: {
-                    RowLabel(title: "Countdown", systemImage: "timer")
+                    RowLabel(title: "Countdown", icon: .timer)
                 }
             } footer: {
                 SectionFooter("Time to get settled before the text starts moving.")
@@ -67,7 +67,7 @@ struct PrompterSettingsForm: View {
             if showsAutoStart {
                 Section {
                     Toggle(isOn: $settings.showsNotchTab) {
-                        RowLabel(title: "Show tab in the notch", systemImage: "rectangle.topthird.inset.filled")
+                        RowLabel(title: "Show tab in the notch", icon: .layoutTop)
                     }
                 } footer: {
                     SectionFooter("When it's off, the prompter only appears when you open it (⌃⌥P, the menu bar or a click on the notch) and hides completely when you close it.")
@@ -79,7 +79,7 @@ struct PrompterSettingsForm: View {
                             Text(option.label).tag(option)
                         }
                     } label: {
-                        RowLabel(title: "Auto-start", systemImage: "wand.and.sparkles")
+                        RowLabel(title: "Auto-start", icon: .magicWand)
                     }
                 } footer: {
                     SectionFooter("When Zoom, FaceTime, QuickTime, OBS or another app turns on the camera, Cue shows your script and starts the countdown. It pauses when the camera turns off.")
@@ -88,7 +88,7 @@ struct PrompterSettingsForm: View {
 
             Section {
                 Toggle(isOn: $settings.mirror) {
-                    RowLabel(title: "Mirror mode", systemImage: "arrow.left.and.right.righttriangle.left.righttriangle.right")
+                    RowLabel(title: "Mirror mode", icon: .mirror)
                 }
             } footer: {
                 SectionFooter("Flips the text for use with teleprompter glass.")
@@ -102,13 +102,13 @@ struct PrompterSettingsForm: View {
 
 private struct RowLabel: View {
     let title: LocalizedStringKey
-    let systemImage: String
+    let icon: HugeIcon.Name
 
     var body: some View {
         Label {
             Text(title).textStyle(.body, weight: .medium)
         } icon: {
-            Image(systemName: systemImage)
+            HugeIcon(icon, size: 18)
                 .foregroundStyle(Theme.accent)
         }
     }
@@ -117,13 +117,13 @@ private struct RowLabel: View {
 private struct SliderRow<SliderView: View>: View {
     let title: LocalizedStringKey
     let value: String
-    let systemImage: String
+    let icon: HugeIcon.Name
     @ViewBuilder let slider: () -> SliderView
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack {
-                RowLabel(title: title, systemImage: systemImage)
+                RowLabel(title: title, icon: icon)
                 Spacer()
                 Text(value)
                     .font(.mono(14, .medium))

@@ -8,7 +8,7 @@ private let log = Logger(subsystem: "com.manudev.pronter", category: "floating")
 /// Ventana flotante (Picture in Picture) que muestra el prompter encima de cualquier app:
 /// Cámara, Instagram, TikTok, WhatsApp, Zoom…
 ///
-/// Arranque automático: mientras la ventana está abierta, Pronter mantiene activa una sesión
+/// Arranque automático: mientras la ventana está abierta, Cue mantiene activa una sesión
 /// de audio de reproducción. Cuando otra app empieza a grabar, iOS interrumpe esa sesión:
 /// esa es la señal para contar y arrancar. Cuando deja de grabar, la interrupción termina
 /// y el texto se pausa. No usa el micrófono.
@@ -154,7 +154,7 @@ final class FloatingPrompter: NSObject, ObservableObject {
 
         switch type {
         case .began:
-            // Solo cuenta si otra app tomó el audio (no si iOS suspendió a Pronter).
+            // Solo cuenta si otra app tomó el audio (no si iOS suspendió a Cue).
             guard reason == .default else { return }
             otherAppRecording = true
             guard isActive, settings.floatingAutoStart else { return }

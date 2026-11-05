@@ -22,7 +22,7 @@ struct FloatingPrompterView: View {
                     floating.toggleWindow()
                 } label: {
                     Label(floating.isActive ? "Close floating window" : "Open floating window",
-                          systemImage: floating.isActive ? "pip.exit" : "pip.enter")
+                          image: floating.isActive ? "hi-pip-exit" : "hi-pip")
                 }
                 .buttonStyle(PrimaryButtonStyle(prominent: !floating.isActive))
                 .disabled(!floating.isSupported)
@@ -31,15 +31,15 @@ struct FloatingPrompterView: View {
                 statusLine
 
                 Picker("Window shape", selection: $settings.floatingVertical) {
-                    Label("Horizontal", systemImage: "rectangle").tag(false)
-                    Label("Vertical", systemImage: "rectangle.portrait").tag(true)
+                    Label("Horizontal", image: "hi-landscape").tag(false)
+                    Label("Vertical", image: "hi-portrait").tag(true)
                 }
                 .pickerStyle(.segmented)
 
                 autoStartCard
 
                 HStack(spacing: 12) {
-                    CircleButton(systemImage: "backward.end.fill") { floating.engine.stop() }
+                    CircleButton(icon: .previous) { floating.engine.stop() }
                     EngineToggle(engine: floating.engine)
                     Spacer(minLength: 0)
                     ElapsedLabel(engine: floating.engine)
@@ -55,12 +55,12 @@ struct FloatingPrompterView: View {
         .background(Theme.background.ignoresSafeArea())
         .safeAreaInset(edge: .top) {
             HStack {
-                CircleButton(systemImage: "xmark") { dismiss() }
+                CircleButton(icon: .cancel) { dismiss() }
                 Spacer()
                 Text("Floating prompter")
                     .textStyle(.headline)
                 Spacer()
-                CircleButton(systemImage: "arrow.left.and.right.righttriangle.left.righttriangle.right",
+                CircleButton(icon: .mirror,
                              active: settings.mirror) {
                     settings.mirror.toggle()
                 }
@@ -82,8 +82,7 @@ struct FloatingPrompterView: View {
             .overlay {
                 if floating.isActive {
                     VStack(spacing: 10) {
-                        Image(systemName: "pip")
-                            .font(.system(size: 32, weight: .semibold, design: .default))
+                        HugeIcon(.pip, size: 32)
                             .foregroundStyle(Theme.accent)
                         Text("Your script is in the floating window.\nOpen the app you'll record with.")
                             .textStyle(.callout)
@@ -158,7 +157,7 @@ struct FloatingPrompterView: View {
             Label {
                 Text("Cue knows you're recording because iOS pauses its audio when another app starts recording. If an app doesn't do this, tap **▶** in the window. While the window is open, your music is paused.")
             } icon: {
-                Image(systemName: "info.circle")
+                HugeIcon(.info, size: 20)
             }
             .textStyle(.footnote, weight: .regular)
             .foregroundStyle(Theme.tertiaryText)
@@ -186,7 +185,7 @@ private struct EngineToggle: View {
             engine.togglePlay()
         } label: {
             Label(engine.isActive ? "Pause" : "Try it here",
-                  systemImage: engine.isActive ? "pause.fill" : "play.fill")
+                  image: engine.isActive ? "hi-pause" : "hi-play")
                 .textStyle(.callout, weight: .semibold)
                 .padding(.horizontal, 18)
                 .padding(.vertical, 12)

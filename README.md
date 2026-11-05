@@ -82,6 +82,8 @@ With the prompter in front: Space, ↑/↓, ←/→, 1–9, + / −, R, M (mirro
 | **Record** | Cue's own camera, with the script next to the lens. A countdown, then the video and the text start together. **Follows my voice** scrolls while you talk and waits when you pause. Color looks (Warm, Cinema, B&W…), a studio light and a portrait-style blurred background. Videos go to Photos. |
 | **Read** | A full-screen prompter, no camera. |
 
+On iPhone and iPad, Cue is just the teleprompter. The Copilot (transcription and AI replies) is a Mac feature.
+
 While reading: tap to pause, swipe to jump back or ahead, pinch to resize the text, and use − / + to change the speed in words per minute.
 
 **How it knows you're recording:** iOS doesn't tell an app when another one starts recording. While the floating window is open, Cue keeps an audio session running. When another app starts recording, iOS interrupts that session, and that's the signal to count down and start. If an app doesn't do this, tap ▶.
@@ -102,16 +104,16 @@ xcodegen generate
 ```
 
 ```bash
-open Pronter.xcodeproj
+open Cue.xcodeproj
 ```
 
-- **Mac:** scheme `PronterMac` → Run. The build is `Cue.app`; copy it to `/Applications` to keep it installed.
-- **iPhone/iPad:** scheme `Pronter`, your device as the destination → Run.
+- **Mac:** scheme `CueMac` → Run. The build is `Cue.app`; copy it to `/Applications` to keep it installed.
+- **iPhone/iPad:** scheme `Cue`, your device as the destination → Run.
 
 End-to-end test on a real iPhone (it opens the floating window, records with the Camera app and checks the text started on its own):
 
 ```bash
-xcodebuild test -project Pronter.xcodeproj -scheme Pronter -destination 'id=<iPhone UDID>' -allowProvisioningUpdates
+xcodebuild test -project Cue.xcodeproj -scheme Cue -destination 'id=<iPhone UDID>' -allowProvisioningUpdates
 ```
 
 English is the base language; Spanish lives in `Shared/Localizable.xcstrings`. After adding strings, build with `SWIFT_EMIT_LOC_STRINGS=YES` and run `tools/sync-strings.py`.

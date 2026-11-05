@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Graba con la cámara de Pronter, al estilo de las apps de creadores: el guion va encima
+/// Graba con la cámara de Cue, al estilo de las apps de creadores: el guion va encima
 /// del video, cerca del lente, y una barra lateral controla la velocidad.
 /// Al tocar grabar hay cuenta regresiva; luego arrancan juntos la grabación y el texto.
 /// Con "Seguir mi voz" el texto avanza mientras hablas y espera cuando callas.
@@ -108,8 +108,7 @@ struct CameraRecordView: View {
         case .unavailable(let reason):
             VStack(spacing: 12) {
                 Spacer()
-                Image(systemName: "video.slash")
-                    .font(.system(size: 34, weight: .semibold, design: .default))
+                HugeIcon(.videoOff, size: 34)
                 Text(reason)
                     .textStyle(.callout, weight: .regular)
                     .multilineTextAlignment(.center)
@@ -122,7 +121,7 @@ struct CameraRecordView: View {
 
     private var topBar: some View {
         HStack(spacing: 10) {
-            CircleButton(systemImage: "xmark", size: 38) { dismiss() }
+            CircleButton(icon: .cancel, size: 38) { dismiss() }
                 .opacity(camera.isRecording ? 0 : 1)
                 .disabled(camera.isRecording)
             Spacer()
@@ -133,7 +132,7 @@ struct CameraRecordView: View {
                     settings.voiceFollow.toggle()
                 } label: {
                     Label(settings.voiceFollow ? "Follows my voice" : "Fixed speed",
-                          systemImage: settings.voiceFollow ? "waveform" : "gauge.with.dots.needle.33percent")
+                          image: settings.voiceFollow ? "hi-audio-wave" : "hi-speed")
                         .textStyle(.footnote, weight: .semibold)
                         .foregroundStyle(.white)
                         .padding(.horizontal, 14)
@@ -143,7 +142,7 @@ struct CameraRecordView: View {
                 .buttonStyle(PressableStyle())
             }
             Spacer()
-            CircleButton(systemImage: "arrow.left.and.right.righttriangle.left.righttriangle.right",
+            CircleButton(icon: .mirror,
                          size: 38, active: settings.mirror) {
                 settings.mirror.toggle()
             }
@@ -162,7 +161,7 @@ struct CameraRecordView: View {
                     .transition(.move(edge: .bottom).combined(with: .opacity))
             }
             HStack {
-                CircleButton(systemImage: "camera.filters", size: 52, active: showsFilters) {
+                CircleButton(icon: .colors, size: 52, active: showsFilters) {
                     showsFilters.toggle()
                 }
                 .accessibilityLabel("Filters")
@@ -171,7 +170,7 @@ struct CameraRecordView: View {
                     recordTapped()
                 }
                 Spacer()
-                CircleButton(systemImage: "arrow.triangle.2.circlepath.camera", size: 52) { camera.flip() }
+                CircleButton(icon: .cameraRotate, size: 52) { camera.flip() }
                     .opacity(camera.isRecording || camera.status != .ready ? 0.3 : 1)
                     .disabled(camera.isRecording || camera.status != .ready)
             }
@@ -188,14 +187,14 @@ struct CameraRecordView: View {
         if engine.isCountingDown {
             hint("Get ready…")
         } else if pausedBySilence {
-            hint("Waiting for your voice…", systemImage: "waveform")
+            hint("Waiting for your voice…", icon: .audioWave)
         } else if camera.isRecording {
             EmptyView()
         } else if engine.phase == .paused || engine.phase == .finished {
             Button {
                 engine.stop()
             } label: {
-                Label("Back to the start of the text", systemImage: "arrow.up.to.line")
+                Label("Back to the start of the text", image: "hi-align-top")
                     .textStyle(.footnote, weight: .semibold)
                     .padding(.horizontal, 14)
                     .padding(.vertical, 8)
@@ -210,9 +209,9 @@ struct CameraRecordView: View {
         }
     }
 
-    private func hint(_ text: LocalizedStringKey, systemImage: String? = nil) -> some View {
+    private func hint(_ text: LocalizedStringKey, icon: HugeIcon.Name? = nil) -> some View {
         HStack(spacing: 6) {
-            if let systemImage { Image(systemName: systemImage) }
+            if let icon { HugeIcon(icon, size: 15) }
             Text(text)
         }
         .textStyle(.footnote, weight: .semibold)
@@ -282,7 +281,7 @@ private struct SideControlBar: View {
 
     var body: some View {
         VStack(spacing: 6) {
-            barButton("chevron.up") { settings.adjustSpeed(by: 10) }
+            barButton(.arrowUp) { settings.adjustSpeed(by: 10) }
             VStack(spacing: 0) {
                 Text("\(Int(settings.wordsPerMinute))")
                     .textStyle(.callout, weight: .bold)
@@ -292,12 +291,12 @@ private struct SideControlBar: View {
                     .foregroundStyle(Theme.secondaryText)
             }
             .foregroundStyle(.white)
-            barButton("chevron.down") { settings.adjustSpeed(by: -10) }
+            barButton(.arrowDown) { settings.adjustSpeed(by: -10) }
             Rectangle().fill(Theme.hairline).frame(width: 28, height: 1).padding(.vertical, 4)
-            barButton(engine.isActive ? "pause.fill" : "play.fill", active: engine.isActive || waitingForVoice) {
+            barButton(engine.isActive ? .pause : .play, active: engine.isActive || waitingForVoice) {
                 engine.togglePlay()
             }
-            barButton("lightbulb.max.fill", active: ringLight) { ringLight.toggle() }
+            barButton(.lightBulb, active: ringLight) { ringLight.toggle() }
                 .accessibilityLabel("Ring light")
         }
         .padding(.vertical, 10)
@@ -306,10 +305,9 @@ private struct SideControlBar: View {
         .overlay(Pill().strokeBorder(Theme.hairline, lineWidth: 1))
     }
 
-    private func barButton(_ systemImage: String, active: Bool = false, action: @escaping () -> Void) -> some View {
+    private func barButton(_ icon: HugeIcon.Name, active: Bool = false, action: @escaping () -> Void) -> some View {
         Button(action: action) {
-            Image(systemName: systemImage)
-                .font(.system(size: 16, weight: .bold, design: .default))
+            HugeIcon(icon, size: 18, filled: true)
                 .foregroundStyle(.white)
                 .frame(width: 40, height: 40)
                 .background(Circle().fill(active ? Theme.accent : Color.white.opacity(0.08)))
@@ -357,8 +355,8 @@ private struct FilterTray: View {
                 .padding(.vertical, 6)
             }
             VStack(spacing: 10) {
-                FilterSlider(title: "Light", systemImage: "sun.max.fill", value: $camera.light)
-                FilterSlider(title: "Background", systemImage: "person.and.background.dotted", value: $camera.background)
+                FilterSlider(title: "Light", icon: .sun, value: $camera.light)
+                FilterSlider(title: "Background", icon: .blur, value: $camera.background)
             }
             .padding(.horizontal, 22)
         }
@@ -395,12 +393,12 @@ private struct LookChip: View {
 
 private struct FilterSlider: View {
     let title: LocalizedStringKey
-    let systemImage: String
+    let icon: HugeIcon.Name
     @Binding var value: Double
 
     var body: some View {
         HStack(spacing: 12) {
-            Label(title, systemImage: systemImage)
+            Label { Text(title) } icon: { HugeIcon(icon, size: 15) }
                 .textStyle(.footnote, weight: .semibold)
                 .foregroundStyle(.white)
                 .frame(width: 76, alignment: .leading)
@@ -428,8 +426,7 @@ private struct RecordButton: View {
                     .frame(width: 84, height: 84)
                     .glow(isRecording ? Theme.record : .clear, radius: 12)
                 if isCountingDown {
-                    Image(systemName: "xmark")
-                        .font(.system(size: 26, weight: .bold, design: .default))
+                    HugeIcon(.cancel, size: 26)
                         .foregroundStyle(.white)
                         .frame(width: 66, height: 66)
                         .background(Circle().fill(Theme.record.opacity(0.6)))

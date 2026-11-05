@@ -403,7 +403,7 @@ final class PrompterPanelController: NSObject, NSWindowDelegate {
     /// un evento perdido nunca deja el notch sin responder.
     ///
     /// Mientras acepta el ratón, un área de seguimiento de la propia ventana avisa de cada movimiento
-    /// (también con Pronter delante, cuando un monitor global no recibe nada). Mientras lo ignora, la
+    /// (también con Cue delante, cuando un monitor global no recibe nada). Mientras lo ignora, la
     /// ventana no recibe eventos y lo vigila `passthroughTimer`.
     private func updatePassthrough() {
         guard let panel, panel.isVisible else { return stopPassthroughTimer() }
@@ -476,7 +476,7 @@ final class NotchPanelState: ObservableObject {
 }
 
 /// Vista raíz de la ventana: avisa de cada movimiento del puntero dentro de ella, esté o no
-/// Pronter delante (`.activeAlways`), para decidir si los clics pasan a la app de debajo.
+/// Cue delante (`.activeAlways`), para decidir si los clics pasan a la app de debajo.
 final class PointerTrackingView: NSView {
     var onPointerChange: (() -> Void)?
     private var area: NSTrackingArea?

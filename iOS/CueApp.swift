@@ -2,20 +2,37 @@ import SwiftUI
 
 /// Punto de entrada: fija el idioma de la interfaz antes de crear la app.
 @main
-enum PronterMain {
+enum CueMain {
     static func main() {
         AppLanguage.applyAtLaunch()
-        PronterApp.main()
+        CueApp.main()
     }
 }
 
-struct PronterApp: App {
+struct CueApp: App {
     @StateObject private var store = ScriptStore()
     @StateObject private var settings = PrompterSettings()
     @Environment(\.scenePhase) private var scenePhase
 
     init() {
         AppFont.registerAll()
+        Self.styleUIKitChrome()
+    }
+
+    /// Barras de navegación, botones de barra y controles segmentados con las fuentes de la app
+    /// (si no, UIKit los dibuja en SF Pro).
+    private static func styleUIKitChrome() {
+        func font(_ family: AppFont.Family, _ weight: Font.Weight, _ size: CGFloat) -> UIFont {
+            UIFont(name: AppFont.name(family, weight), size: size) ?? .systemFont(ofSize: size)
+        }
+        let nav = UINavigationBar.appearance()
+        nav.titleTextAttributes = [.font: font(.display, .semibold, 17)]
+        nav.largeTitleTextAttributes = [.font: font(.display, .semibold, 34)]
+        for state: UIControl.State in [.normal, .highlighted, .disabled] {
+            UIBarButtonItem.appearance().setTitleTextAttributes([.font: font(.display, .medium, 17)], for: state)
+        }
+        UISegmentedControl.appearance().setTitleTextAttributes([.font: font(.display, .medium, 13)], for: .normal)
+        UISegmentedControl.appearance().setTitleTextAttributes([.font: font(.display, .semibold, 13)], for: .selected)
     }
 
     var body: some Scene {
@@ -23,7 +40,7 @@ struct PronterApp: App {
             LibraryView()
                 .environmentObject(store)
                 .environmentObject(settings)
-                .fontDesign(.default)
+                .font(.text(17, .medium))
                 .tint(Theme.accent)
                 .preferredColorScheme(.dark)
         }

@@ -1,0 +1,864 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00426BFE7D0256EE1953040C /* PrompterSettingsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E04188A8A794208C38E47F /* PrompterSettingsForm.swift */; };
+		068F176E2B7840ADAC5B696F /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BA46B92D1E934A32A7F3D /* AppLanguage.swift */; };
+		0DE6928394AF12B538B87B8F /* CopilotSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1A808E86758343FDE2CE8 /* CopilotSettings.swift */; };
+		0EE7022A2F3E78C93BEFA6FF /* ScriptEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678778B07CDBCEAC2D9863E1 /* ScriptEditorView.swift */; };
+		139B21898987DE189D60368F /* CloudLLM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384370D044C56E0C87DFDEB3 /* CloudLLM.swift */; };
+		16061AA8EC6B00E3EF0610A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9475316CE9A1C028B44925FF /* Assets.xcassets */; };
+		18C357586BE80F57884B38A3 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E843694759FE8AF202AE7013 /* Session.swift */; };
+		1BB6A913A10D826D5B2AE83C /* RecordingMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95E84C296FB015C3C1E406 /* RecordingMonitor.swift */; };
+		1D0BD66F05EBEBE958DFF106 /* HankenGrotesk-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21FA5EF96C1C76AA1A31526E /* HankenGrotesk-Regular.ttf */; };
+		2006F40315626A63275FCD04 /* Script.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3701C5ECA579AC5793DEA3CA /* Script.swift */; };
+		23E25C58127F5DDD49F1A29C /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD22DBCFC3BC7C9511354EC /* LibraryView.swift */; };
+		28424DEBE3A1D10D3CB6B6E2 /* ScriptStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942D1D551CD063311157D5D9 /* ScriptStore.swift */; };
+		285EA211232488937B4A7C66 /* PrompterPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0965A0178DEAD30D52859F /* PrompterPanel.swift */; };
+		2885FFFC7DEDE306DB15D4F8 /* SNPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D023D17BF4C2AAFC1D6CD8F3 /* SNPro-Medium.ttf */; };
+		28A6D445F6F01FB6A5813011 /* GeistMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79981C426DA25FB377B46D5E /* GeistMono-Medium.ttf */; };
+		29D246FE8EA91DDD087BAC65 /* ScrollingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C424AA6C79AE1E69B56E1 /* ScrollingTextView.swift */; };
+		2BD84C58055F51B6E4D681FC /* FloatingPrompterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60E829DDDB973C0C687EE68 /* FloatingPrompterView.swift */; };
+		2CBB7663E4DDF2E1438D7593 /* CueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C3E40D17361BAA5F7AB282 /* CueApp.swift */; };
+		31B98BC2A4AF5D7B421E4A9E /* GeistMono-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4989FB3C6B7BF4EFE3BFB3E1 /* GeistMono-SemiBold.ttf */; };
+		329570F9434246F5A8E8806F /* SessionViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3705AE938CED13AA0DA1F6F /* SessionViews.swift */; };
+		340BAF065196CFF39913E913 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 2666CE788265ED67752E7EBE /* Localizable.xcstrings */; };
+		388CB34F37196B29021BB66C /* WhisperKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6E5D1D19D102D884C7583412 /* WhisperKit */; };
+		3ACD0F4B7DE2997743D2634D /* MacMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66095951C7CC488A60821E63 /* MacMainView.swift */; };
+		3ADA111214F6B2D0FBFED6CB /* WhisperTranscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13061D09166813C3A415E7B /* WhisperTranscriber.swift */; };
+		3BA087DE6A97FA816E14D37A /* HankenGrotesk-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 378D3DC09A95476D6B05E166 /* HankenGrotesk-SemiBold.ttf */; };
+		41E7AA38BF0B143B1DB019F5 /* Script.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3701C5ECA579AC5793DEA3CA /* Script.swift */; };
+		42B51DAB630EF5E79172DED7 /* GeistMono-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4989FB3C6B7BF4EFE3BFB3E1 /* GeistMono-SemiBold.ttf */; };
+		43CEDD5F5078DEC360668F30 /* HankenGrotesk-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 378D3DC09A95476D6B05E166 /* HankenGrotesk-SemiBold.ttf */; };
+		43D7643173B97CD343960BA2 /* HankenGrotesk-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD5672E814AA0CF30F6E4216 /* HankenGrotesk-Bold.ttf */; };
+		4495B60DEB846753BE7D2677 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 2666CE788265ED67752E7EBE /* Localizable.xcstrings */; };
+		453F29E1567502F705F080C9 /* PrompterFrameRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268B75AB2F179CEE34AD5B1 /* PrompterFrameRenderer.swift */; };
+		46BB82D2698543823D5529EC /* AudioCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265451BB34BDDE93366C839E /* AudioCapture.swift */; };
+		4DA5292E95AA16F5CC91839B /* GeistMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D5169C893CBAA05B8D0EEE6 /* GeistMono-Regular.ttf */; };
+		50DA2123F1194302D0EBEAE2 /* GeistMono-OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = ACDED4FA0B87DD776744935E /* GeistMono-OFL.txt */; };
+		5553D53B320B86E06160477F /* VideoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E65CB01DF0854724966FCE6 /* VideoWriter.swift */; };
+		643DE35D802F6E873ED5EB24 /* Hugeicons-MIT.txt in Resources */ = {isa = PBXBuildFile; fileRef = 468D0EABE346D9136A2C535D /* Hugeicons-MIT.txt */; };
+		64C4093C822C4C6CE0620F1C /* CopilotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D27F0BF49C52254CA7E96 /* CopilotModel.swift */; };
+		65690CEEA7BCF313929C789B /* HankenGrotesk-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC29E3379418CADD3EC674E2 /* HankenGrotesk-Medium.ttf */; };
+		682C4DA6F8FF63B4537A76BE /* PrompterSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73FC2B7119D0D3885664338 /* PrompterSettings.swift */; };
+		6BC59284512CF9B4CCDB6ECB /* HankenGrotesk-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD5672E814AA0CF30F6E4216 /* HankenGrotesk-Bold.ttf */; };
+		70FCBBD5D6EF1E070B7CB914 /* SNPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1B475281C59201E05848222 /* SNPro-Regular.ttf */; };
+		71074115EFF65C5206197E6F /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E843694759FE8AF202AE7013 /* Session.swift */; };
+		715C4640C3ED16C7B3416662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA1FBD09407F8D6DBD33A9F4 /* Assets.xcassets */; };
+		73152A93672ECAF3C26466C6 /* FloatingAutoStartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AADB6DFBD310CBD44BC4C3 /* FloatingAutoStartUITests.swift */; };
+		7812B5D59898D5056BE8E9D1 /* FloatingPrompter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B3BEA138E7AD55E7DE5192 /* FloatingPrompter.swift */; };
+		7AF85837089690E1D17F7F2D /* GeistMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D5169C893CBAA05B8D0EEE6 /* GeistMono-Regular.ttf */; };
+		80335638604F8BF832D37031 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BA46B92D1E934A32A7F3D /* AppLanguage.swift */; };
+		80B82715C43D5EB28B6BC13C /* VideoFilterProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97CC61CFA587CA0C5C9E368 /* VideoFilterProcessor.swift */; };
+		8461171C6DE3B9F3EB8632A6 /* HotKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5BAF3F239CA4ED48A412A4 /* HotKeys.swift */; };
+		86833B359635B20F4C052780 /* SessionViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3705AE938CED13AA0DA1F6F /* SessionViews.swift */; };
+		8CE0E361FFA980AB0DA2B951 /* Hugeicons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527D18817FD22BC589EDBA91 /* Hugeicons.xcassets */; };
+		8F254ED684FCD4805FABF75B /* PrompterEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D1E7ED8D5FB201FAC99511 /* PrompterEngine.swift */; };
+		90EF0DE24CA2B4321B235B43 /* GeistMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79981C426DA25FB377B46D5E /* GeistMono-Medium.ttf */; };
+		98EEE1B463B1EDE1980C9FF6 /* HankenGrotesk-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21FA5EF96C1C76AA1A31526E /* HankenGrotesk-Regular.ttf */; };
+		9910D0F23678C02E3821143C /* SNPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1B475281C59201E05848222 /* SNPro-Regular.ttf */; };
+		99382B6259DA0CE9BC43C7F7 /* Hugeicons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527D18817FD22BC589EDBA91 /* Hugeicons.xcassets */; };
+		9AB20585B766D457FE16C335 /* PrompterSettingsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E04188A8A794208C38E47F /* PrompterSettingsForm.swift */; };
+		9D77333621CFCF764D37AE8B /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F91DDDACF9E0BA12B28E2 /* KeychainStore.swift */; };
+		9DE5B0F88BDCA8AA637BDCD8 /* PrompterEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D1E7ED8D5FB201FAC99511 /* PrompterEngine.swift */; };
+		9FD13CFDDE98F610B452883F /* PrompterSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73FC2B7119D0D3885664338 /* PrompterSettings.swift */; };
+		9FFE269ADCC42F6FE72ECC47 /* SNPro-OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 87C173C81BBE8C50F21F361E /* SNPro-OFL.txt */; };
+		A0D7A799EBF765C7E28DF380 /* CameraRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF067FFD2F903388788EEF2A /* CameraRecordView.swift */; };
+		AAF951FCC2B82A258284C18B /* GeistMono-OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = ACDED4FA0B87DD776744935E /* GeistMono-OFL.txt */; };
+		ACBF998A3E6F14ECC974CDED /* CopilotViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B68AFE785D4A5163B7E98A /* CopilotViews.swift */; };
+		AF7C04553C381E8CAA80398E /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991CADA7BCB6C4A976AAA2A4 /* CameraModel.swift */; };
+		B1E1DEFD9811FE1CB4B79BD7 /* SNPro-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E318611B16D47BCED7540081 /* SNPro-Semibold.ttf */; };
+		B4B0E94A6E2EA299390CAEEB /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB89C48B7538ECFF9A31053 /* Theme.swift */; };
+		BBB29A657752DCAFFA12462A /* HankenGrotesk-OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = D04EFB44284F4A4384E04F6A /* HankenGrotesk-OFL.txt */; };
+		C51E7C6A728953239F86D3CB /* SNPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35E2F6049BF41CC8C56825DD /* SNPro-Bold.ttf */; };
+		DD77D3F481A0FD1196E3AC29 /* SNPro-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E318611B16D47BCED7540081 /* SNPro-Semibold.ttf */; };
+		DED6A66669EB7CBE4D70AB20 /* SNPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D023D17BF4C2AAFC1D6CD8F3 /* SNPro-Medium.ttf */; };
+		DF7861E9BEDE9DA9CCAA5A35 /* SNPro-OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 87C173C81BBE8C50F21F361E /* SNPro-OFL.txt */; };
+		E3DF163C511157AD1D28E155 /* HankenGrotesk-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC29E3379418CADD3EC674E2 /* HankenGrotesk-Medium.ttf */; };
+		E3EF8412B93BBD139464BEF8 /* PrompterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476DB147482A87F3B9EF6957 /* PrompterView.swift */; };
+		E6A8BB06E37C17A814419854 /* MacAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828CDD35E0A6233E881F3EC /* MacAppModel.swift */; };
+		E9CE321CF20B273AC91274AB /* CueMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830BF638AA09E414A5891EF3 /* CueMacApp.swift */; };
+		ECAB63A8149ED4B92082A450 /* ReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B47603D08D9DEB5CA1FE616 /* ReaderView.swift */; };
+		F0BE5917BA93329FC410663D /* ScriptStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942D1D551CD063311157D5D9 /* ScriptStore.swift */; };
+		F0CE13FD4A666432C961D6AC /* LocalLLM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040515EE5BDE13842A5B732F /* LocalLLM.swift */; };
+		F119824DA4BFA5B9C9D973B4 /* PrompterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476DB147482A87F3B9EF6957 /* PrompterView.swift */; };
+		F64BE30B2D440D29F0F09DD8 /* Hugeicons-MIT.txt in Resources */ = {isa = PBXBuildFile; fileRef = 468D0EABE346D9136A2C535D /* Hugeicons-MIT.txt */; };
+		F7A17B2A1C3752481D4F31A7 /* SNPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35E2F6049BF41CC8C56825DD /* SNPro-Bold.ttf */; };
+		F826334A586CC30E3940A1EA /* HankenGrotesk-OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = D04EFB44284F4A4384E04F6A /* HankenGrotesk-OFL.txt */; };
+		FF33C6B2A625437F75B88657 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB89C48B7538ECFF9A31053 /* Theme.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DC68CA004D963BD7F6DB62A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A710968E8080B37367BF584 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 633C62679D75DCE6F0007FB2;
+			remoteInfo = Cue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		040515EE5BDE13842A5B732F /* LocalLLM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLLM.swift; sourceTree = "<group>"; };
+		09B68AFE785D4A5163B7E98A /* CopilotViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopilotViews.swift; sourceTree = "<group>"; };
+		1A95E84C296FB015C3C1E406 /* RecordingMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingMonitor.swift; sourceTree = "<group>"; };
+		21FA5EF96C1C76AA1A31526E /* HankenGrotesk-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HankenGrotesk-Regular.ttf"; sourceTree = "<group>"; };
+		265451BB34BDDE93366C839E /* AudioCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCapture.swift; sourceTree = "<group>"; };
+		2666CE788265ED67752E7EBE /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		2828CDD35E0A6233E881F3EC /* MacAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacAppModel.swift; sourceTree = "<group>"; };
+		2DBD398F3BC3331A344D7A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		340D27F0BF49C52254CA7E96 /* CopilotModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopilotModel.swift; sourceTree = "<group>"; };
+		35E2F6049BF41CC8C56825DD /* SNPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SNPro-Bold.ttf"; sourceTree = "<group>"; };
+		3701C5ECA579AC5793DEA3CA /* Script.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Script.swift; sourceTree = "<group>"; };
+		378D3DC09A95476D6B05E166 /* HankenGrotesk-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HankenGrotesk-SemiBold.ttf"; sourceTree = "<group>"; };
+		384370D044C56E0C87DFDEB3 /* CloudLLM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudLLM.swift; sourceTree = "<group>"; };
+		468D0EABE346D9136A2C535D /* Hugeicons-MIT.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Hugeicons-MIT.txt"; sourceTree = "<group>"; };
+		476DB147482A87F3B9EF6957 /* PrompterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrompterView.swift; sourceTree = "<group>"; };
+		4989FB3C6B7BF4EFE3BFB3E1 /* GeistMono-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GeistMono-SemiBold.ttf"; sourceTree = "<group>"; };
+		4C6BA46B92D1E934A32A7F3D /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
+		527D18817FD22BC589EDBA91 /* Hugeicons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Hugeicons.xcassets; sourceTree = "<group>"; };
+		5D5169C893CBAA05B8D0EEE6 /* GeistMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GeistMono-Regular.ttf"; sourceTree = "<group>"; };
+		638C424AA6C79AE1E69B56E1 /* ScrollingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingTextView.swift; sourceTree = "<group>"; };
+		66095951C7CC488A60821E63 /* MacMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacMainView.swift; sourceTree = "<group>"; };
+		678778B07CDBCEAC2D9863E1 /* ScriptEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptEditorView.swift; sourceTree = "<group>"; };
+		6E55D9E0F8198923EEBD3D31 /* Cue.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Cue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79981C426DA25FB377B46D5E /* GeistMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GeistMono-Medium.ttf"; sourceTree = "<group>"; };
+		7E65CB01DF0854724966FCE6 /* VideoWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoWriter.swift; sourceTree = "<group>"; };
+		829F91DDDACF9E0BA12B28E2 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		830BF638AA09E414A5891EF3 /* CueMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CueMacApp.swift; sourceTree = "<group>"; };
+		87C173C81BBE8C50F21F361E /* SNPro-OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SNPro-OFL.txt"; sourceTree = "<group>"; };
+		8B47603D08D9DEB5CA1FE616 /* ReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderView.swift; sourceTree = "<group>"; };
+		942D1D551CD063311157D5D9 /* ScriptStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptStore.swift; sourceTree = "<group>"; };
+		9475316CE9A1C028B44925FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94D1E7ED8D5FB201FAC99511 /* PrompterEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrompterEngine.swift; sourceTree = "<group>"; };
+		95E04188A8A794208C38E47F /* PrompterSettingsForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrompterSettingsForm.swift; sourceTree = "<group>"; };
+		991CADA7BCB6C4A976AAA2A4 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
+		9AF1A808E86758343FDE2CE8 /* CopilotSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopilotSettings.swift; sourceTree = "<group>"; };
+		9F5BAF3F239CA4ED48A412A4 /* HotKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeys.swift; sourceTree = "<group>"; };
+		A7C3E40D17361BAA5F7AB282 /* CueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CueApp.swift; sourceTree = "<group>"; };
+		ACDED4FA0B87DD776744935E /* GeistMono-OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "GeistMono-OFL.txt"; sourceTree = "<group>"; };
+		AF067FFD2F903388788EEF2A /* CameraRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRecordView.swift; sourceTree = "<group>"; };
+		B1B475281C59201E05848222 /* SNPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SNPro-Regular.ttf"; sourceTree = "<group>"; };
+		B60E829DDDB973C0C687EE68 /* FloatingPrompterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPrompterView.swift; sourceTree = "<group>"; };
+		B73FC2B7119D0D3885664338 /* PrompterSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrompterSettings.swift; sourceTree = "<group>"; };
+		B97CC61CFA587CA0C5C9E368 /* VideoFilterProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFilterProcessor.swift; sourceTree = "<group>"; };
+		BA1FBD09407F8D6DBD33A9F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFD22DBCFC3BC7C9511354EC /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		C6AADB6DFBD310CBD44BC4C3 /* FloatingAutoStartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingAutoStartUITests.swift; sourceTree = "<group>"; };
+		C9B3BEA138E7AD55E7DE5192 /* FloatingPrompter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPrompter.swift; sourceTree = "<group>"; };
+		CC29E3379418CADD3EC674E2 /* HankenGrotesk-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HankenGrotesk-Medium.ttf"; sourceTree = "<group>"; };
+		CD5672E814AA0CF30F6E4216 /* HankenGrotesk-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HankenGrotesk-Bold.ttf"; sourceTree = "<group>"; };
+		CE5E6A9E684582636A3EC26F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CF35FA48425F4DBEE3C6E8FF /* CueMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CueMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D023D17BF4C2AAFC1D6CD8F3 /* SNPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SNPro-Medium.ttf"; sourceTree = "<group>"; };
+		D04EFB44284F4A4384E04F6A /* HankenGrotesk-OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "HankenGrotesk-OFL.txt"; sourceTree = "<group>"; };
+		D13061D09166813C3A415E7B /* WhisperTranscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperTranscriber.swift; sourceTree = "<group>"; };
+		D268B75AB2F179CEE34AD5B1 /* PrompterFrameRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrompterFrameRenderer.swift; sourceTree = "<group>"; };
+		D26D3CB5D2685B3D8371ABB8 /* CueUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3705AE938CED13AA0DA1F6F /* SessionViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViews.swift; sourceTree = "<group>"; };
+		DFB89C48B7538ECFF9A31053 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		E318611B16D47BCED7540081 /* SNPro-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SNPro-Semibold.ttf"; sourceTree = "<group>"; };
+		E843694759FE8AF202AE7013 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		EC0965A0178DEAD30D52859F /* PrompterPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrompterPanel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AE9C02C98B7B8289C4BF0E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				388CB34F37196B29021BB66C /* WhisperKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13D077A90C29EEF12173FF38 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4C6BA46B92D1E934A32A7F3D /* AppLanguage.swift */,
+				527D18817FD22BC589EDBA91 /* Hugeicons.xcassets */,
+				2666CE788265ED67752E7EBE /* Localizable.xcstrings */,
+				94D1E7ED8D5FB201FAC99511 /* PrompterEngine.swift */,
+				B73FC2B7119D0D3885664338 /* PrompterSettings.swift */,
+				95E04188A8A794208C38E47F /* PrompterSettingsForm.swift */,
+				476DB147482A87F3B9EF6957 /* PrompterView.swift */,
+				3701C5ECA579AC5793DEA3CA /* Script.swift */,
+				942D1D551CD063311157D5D9 /* ScriptStore.swift */,
+				E843694759FE8AF202AE7013 /* Session.swift */,
+				D3705AE938CED13AA0DA1F6F /* SessionViews.swift */,
+				DFB89C48B7538ECFF9A31053 /* Theme.swift */,
+				4F5730EC6349A81264C5577A /* Fonts */,
+				39F1260BD3F9CF22DA4E5AD5 /* Licenses */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2D26B145023E293BE6BF38EA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9475316CE9A1C028B44925FF /* Assets.xcassets */,
+				991CADA7BCB6C4A976AAA2A4 /* CameraModel.swift */,
+				AF067FFD2F903388788EEF2A /* CameraRecordView.swift */,
+				A7C3E40D17361BAA5F7AB282 /* CueApp.swift */,
+				C9B3BEA138E7AD55E7DE5192 /* FloatingPrompter.swift */,
+				B60E829DDDB973C0C687EE68 /* FloatingPrompterView.swift */,
+				2DBD398F3BC3331A344D7A21 /* Info.plist */,
+				BFD22DBCFC3BC7C9511354EC /* LibraryView.swift */,
+				D268B75AB2F179CEE34AD5B1 /* PrompterFrameRenderer.swift */,
+				8B47603D08D9DEB5CA1FE616 /* ReaderView.swift */,
+				678778B07CDBCEAC2D9863E1 /* ScriptEditorView.swift */,
+				638C424AA6C79AE1E69B56E1 /* ScrollingTextView.swift */,
+				B97CC61CFA587CA0C5C9E368 /* VideoFilterProcessor.swift */,
+				7E65CB01DF0854724966FCE6 /* VideoWriter.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		39F1260BD3F9CF22DA4E5AD5 /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+				ACDED4FA0B87DD776744935E /* GeistMono-OFL.txt */,
+				D04EFB44284F4A4384E04F6A /* HankenGrotesk-OFL.txt */,
+				468D0EABE346D9136A2C535D /* Hugeicons-MIT.txt */,
+				87C173C81BBE8C50F21F361E /* SNPro-OFL.txt */,
+			);
+			path = Licenses;
+			sourceTree = "<group>";
+		};
+		4F5730EC6349A81264C5577A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				79981C426DA25FB377B46D5E /* GeistMono-Medium.ttf */,
+				5D5169C893CBAA05B8D0EEE6 /* GeistMono-Regular.ttf */,
+				4989FB3C6B7BF4EFE3BFB3E1 /* GeistMono-SemiBold.ttf */,
+				CD5672E814AA0CF30F6E4216 /* HankenGrotesk-Bold.ttf */,
+				CC29E3379418CADD3EC674E2 /* HankenGrotesk-Medium.ttf */,
+				21FA5EF96C1C76AA1A31526E /* HankenGrotesk-Regular.ttf */,
+				378D3DC09A95476D6B05E166 /* HankenGrotesk-SemiBold.ttf */,
+				35E2F6049BF41CC8C56825DD /* SNPro-Bold.ttf */,
+				D023D17BF4C2AAFC1D6CD8F3 /* SNPro-Medium.ttf */,
+				B1B475281C59201E05848222 /* SNPro-Regular.ttf */,
+				E318611B16D47BCED7540081 /* SNPro-Semibold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		662FA3139F75C06C481D89C2 /* Copilot */ = {
+			isa = PBXGroup;
+			children = (
+				265451BB34BDDE93366C839E /* AudioCapture.swift */,
+				384370D044C56E0C87DFDEB3 /* CloudLLM.swift */,
+				340D27F0BF49C52254CA7E96 /* CopilotModel.swift */,
+				9AF1A808E86758343FDE2CE8 /* CopilotSettings.swift */,
+				09B68AFE785D4A5163B7E98A /* CopilotViews.swift */,
+				829F91DDDACF9E0BA12B28E2 /* KeychainStore.swift */,
+				040515EE5BDE13842A5B732F /* LocalLLM.swift */,
+				D13061D09166813C3A415E7B /* WhisperTranscriber.swift */,
+			);
+			path = Copilot;
+			sourceTree = "<group>";
+		};
+		79C733134C8C09AE5E72AE98 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				BA1FBD09407F8D6DBD33A9F4 /* Assets.xcassets */,
+				830BF638AA09E414A5891EF3 /* CueMacApp.swift */,
+				9F5BAF3F239CA4ED48A412A4 /* HotKeys.swift */,
+				CE5E6A9E684582636A3EC26F /* Info.plist */,
+				2828CDD35E0A6233E881F3EC /* MacAppModel.swift */,
+				66095951C7CC488A60821E63 /* MacMainView.swift */,
+				EC0965A0178DEAD30D52859F /* PrompterPanel.swift */,
+				1A95E84C296FB015C3C1E406 /* RecordingMonitor.swift */,
+				662FA3139F75C06C481D89C2 /* Copilot */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		95CE89202C884CEC160F070B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E55D9E0F8198923EEBD3D31 /* Cue.app */,
+				CF35FA48425F4DBEE3C6E8FF /* CueMac.app */,
+				D26D3CB5D2685B3D8371ABB8 /* CueUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D35038E9D48C84AF2886CF48 /* iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C6AADB6DFBD310CBD44BC4C3 /* FloatingAutoStartUITests.swift */,
+			);
+			path = iOSUITests;
+			sourceTree = "<group>";
+		};
+		DA76B9F434C778093A75016B = {
+			isa = PBXGroup;
+			children = (
+				2D26B145023E293BE6BF38EA /* iOS */,
+				D35038E9D48C84AF2886CF48 /* iOSUITests */,
+				79C733134C8C09AE5E72AE98 /* macOS */,
+				13D077A90C29EEF12173FF38 /* Shared */,
+				95CE89202C884CEC160F070B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		633C62679D75DCE6F0007FB2 /* Cue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07DB99E45FC6469A1B11CBB9 /* Build configuration list for PBXNativeTarget "Cue" */;
+			buildPhases = (
+				9E8DA20E6FE468F043DDB77F /* Sources */,
+				522D44577B7B730491927B03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cue;
+			packageProductDependencies = (
+			);
+			productName = Cue;
+			productReference = 6E55D9E0F8198923EEBD3D31 /* Cue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4715EF23120E1FAB3564780 /* CueUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB082D565E385BEC25E39FAF /* Build configuration list for PBXNativeTarget "CueUITests" */;
+			buildPhases = (
+				6F723FE4D0A09DCD2CB0D992 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0646828A52416320629476FF /* PBXTargetDependency */,
+			);
+			name = CueUITests;
+			packageProductDependencies = (
+			);
+			productName = CueUITests;
+			productReference = D26D3CB5D2685B3D8371ABB8 /* CueUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D0A75708DF38DBABBC7CBECF /* CueMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C4271E785164B002F32EE18 /* Build configuration list for PBXNativeTarget "CueMac" */;
+			buildPhases = (
+				3194E0E7F63080C55BAE79F8 /* Sources */,
+				26C5833205E91C041F92C86F /* Resources */,
+				5AE9C02C98B7B8289C4BF0E7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CueMac;
+			packageProductDependencies = (
+				6E5D1D19D102D884C7583412 /* WhisperKit */,
+			);
+			productName = CueMac;
+			productReference = CF35FA48425F4DBEE3C6E8FF /* CueMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A710968E8080B37367BF584 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					633C62679D75DCE6F0007FB2 = {
+						DevelopmentTeam = PFXAB2V4ZM;
+						ProvisioningStyle = Automatic;
+					};
+					A4715EF23120E1FAB3564780 = {
+						DevelopmentTeam = PFXAB2V4ZM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 633C62679D75DCE6F0007FB2;
+					};
+					D0A75708DF38DBABBC7CBECF = {
+						DevelopmentTeam = PFXAB2V4ZM;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 189FD828326F65D5E20F2851 /* Build configuration list for PBXProject "Cue" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				es,
+			);
+			mainGroup = DA76B9F434C778093A75016B;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				51182C2C65AAB4BF2B709B38 /* XCRemoteSwiftPackageReference "WhisperKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 95CE89202C884CEC160F070B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				633C62679D75DCE6F0007FB2 /* Cue */,
+				A4715EF23120E1FAB3564780 /* CueUITests */,
+				D0A75708DF38DBABBC7CBECF /* CueMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26C5833205E91C041F92C86F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				715C4640C3ED16C7B3416662 /* Assets.xcassets in Resources */,
+				90EF0DE24CA2B4321B235B43 /* GeistMono-Medium.ttf in Resources */,
+				50DA2123F1194302D0EBEAE2 /* GeistMono-OFL.txt in Resources */,
+				4DA5292E95AA16F5CC91839B /* GeistMono-Regular.ttf in Resources */,
+				42B51DAB630EF5E79172DED7 /* GeistMono-SemiBold.ttf in Resources */,
+				6BC59284512CF9B4CCDB6ECB /* HankenGrotesk-Bold.ttf in Resources */,
+				65690CEEA7BCF313929C789B /* HankenGrotesk-Medium.ttf in Resources */,
+				F826334A586CC30E3940A1EA /* HankenGrotesk-OFL.txt in Resources */,
+				98EEE1B463B1EDE1980C9FF6 /* HankenGrotesk-Regular.ttf in Resources */,
+				43CEDD5F5078DEC360668F30 /* HankenGrotesk-SemiBold.ttf in Resources */,
+				643DE35D802F6E873ED5EB24 /* Hugeicons-MIT.txt in Resources */,
+				99382B6259DA0CE9BC43C7F7 /* Hugeicons.xcassets in Resources */,
+				340BAF065196CFF39913E913 /* Localizable.xcstrings in Resources */,
+				C51E7C6A728953239F86D3CB /* SNPro-Bold.ttf in Resources */,
+				2885FFFC7DEDE306DB15D4F8 /* SNPro-Medium.ttf in Resources */,
+				DF7861E9BEDE9DA9CCAA5A35 /* SNPro-OFL.txt in Resources */,
+				70FCBBD5D6EF1E070B7CB914 /* SNPro-Regular.ttf in Resources */,
+				DD77D3F481A0FD1196E3AC29 /* SNPro-Semibold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		522D44577B7B730491927B03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16061AA8EC6B00E3EF0610A5 /* Assets.xcassets in Resources */,
+				28A6D445F6F01FB6A5813011 /* GeistMono-Medium.ttf in Resources */,
+				AAF951FCC2B82A258284C18B /* GeistMono-OFL.txt in Resources */,
+				7AF85837089690E1D17F7F2D /* GeistMono-Regular.ttf in Resources */,
+				31B98BC2A4AF5D7B421E4A9E /* GeistMono-SemiBold.ttf in Resources */,
+				43D7643173B97CD343960BA2 /* HankenGrotesk-Bold.ttf in Resources */,
+				E3DF163C511157AD1D28E155 /* HankenGrotesk-Medium.ttf in Resources */,
+				BBB29A657752DCAFFA12462A /* HankenGrotesk-OFL.txt in Resources */,
+				1D0BD66F05EBEBE958DFF106 /* HankenGrotesk-Regular.ttf in Resources */,
+				3BA087DE6A97FA816E14D37A /* HankenGrotesk-SemiBold.ttf in Resources */,
+				F64BE30B2D440D29F0F09DD8 /* Hugeicons-MIT.txt in Resources */,
+				8CE0E361FFA980AB0DA2B951 /* Hugeicons.xcassets in Resources */,
+				4495B60DEB846753BE7D2677 /* Localizable.xcstrings in Resources */,
+				F7A17B2A1C3752481D4F31A7 /* SNPro-Bold.ttf in Resources */,
+				DED6A66669EB7CBE4D70AB20 /* SNPro-Medium.ttf in Resources */,
+				9FFE269ADCC42F6FE72ECC47 /* SNPro-OFL.txt in Resources */,
+				9910D0F23678C02E3821143C /* SNPro-Regular.ttf in Resources */,
+				B1E1DEFD9811FE1CB4B79BD7 /* SNPro-Semibold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3194E0E7F63080C55BAE79F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068F176E2B7840ADAC5B696F /* AppLanguage.swift in Sources */,
+				46BB82D2698543823D5529EC /* AudioCapture.swift in Sources */,
+				139B21898987DE189D60368F /* CloudLLM.swift in Sources */,
+				64C4093C822C4C6CE0620F1C /* CopilotModel.swift in Sources */,
+				0DE6928394AF12B538B87B8F /* CopilotSettings.swift in Sources */,
+				ACBF998A3E6F14ECC974CDED /* CopilotViews.swift in Sources */,
+				E9CE321CF20B273AC91274AB /* CueMacApp.swift in Sources */,
+				8461171C6DE3B9F3EB8632A6 /* HotKeys.swift in Sources */,
+				9D77333621CFCF764D37AE8B /* KeychainStore.swift in Sources */,
+				F0CE13FD4A666432C961D6AC /* LocalLLM.swift in Sources */,
+				E6A8BB06E37C17A814419854 /* MacAppModel.swift in Sources */,
+				3ACD0F4B7DE2997743D2634D /* MacMainView.swift in Sources */,
+				9DE5B0F88BDCA8AA637BDCD8 /* PrompterEngine.swift in Sources */,
+				285EA211232488937B4A7C66 /* PrompterPanel.swift in Sources */,
+				9FD13CFDDE98F610B452883F /* PrompterSettings.swift in Sources */,
+				00426BFE7D0256EE1953040C /* PrompterSettingsForm.swift in Sources */,
+				F119824DA4BFA5B9C9D973B4 /* PrompterView.swift in Sources */,
+				1BB6A913A10D826D5B2AE83C /* RecordingMonitor.swift in Sources */,
+				41E7AA38BF0B143B1DB019F5 /* Script.swift in Sources */,
+				F0BE5917BA93329FC410663D /* ScriptStore.swift in Sources */,
+				71074115EFF65C5206197E6F /* Session.swift in Sources */,
+				329570F9434246F5A8E8806F /* SessionViews.swift in Sources */,
+				B4B0E94A6E2EA299390CAEEB /* Theme.swift in Sources */,
+				3ADA111214F6B2D0FBFED6CB /* WhisperTranscriber.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F723FE4D0A09DCD2CB0D992 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73152A93672ECAF3C26466C6 /* FloatingAutoStartUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E8DA20E6FE468F043DDB77F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80335638604F8BF832D37031 /* AppLanguage.swift in Sources */,
+				AF7C04553C381E8CAA80398E /* CameraModel.swift in Sources */,
+				A0D7A799EBF765C7E28DF380 /* CameraRecordView.swift in Sources */,
+				2CBB7663E4DDF2E1438D7593 /* CueApp.swift in Sources */,
+				7812B5D59898D5056BE8E9D1 /* FloatingPrompter.swift in Sources */,
+				2BD84C58055F51B6E4D681FC /* FloatingPrompterView.swift in Sources */,
+				23E25C58127F5DDD49F1A29C /* LibraryView.swift in Sources */,
+				8F254ED684FCD4805FABF75B /* PrompterEngine.swift in Sources */,
+				453F29E1567502F705F080C9 /* PrompterFrameRenderer.swift in Sources */,
+				682C4DA6F8FF63B4537A76BE /* PrompterSettings.swift in Sources */,
+				9AB20585B766D457FE16C335 /* PrompterSettingsForm.swift in Sources */,
+				E3EF8412B93BBD139464BEF8 /* PrompterView.swift in Sources */,
+				ECAB63A8149ED4B92082A450 /* ReaderView.swift in Sources */,
+				2006F40315626A63275FCD04 /* Script.swift in Sources */,
+				0EE7022A2F3E78C93BEFA6FF /* ScriptEditorView.swift in Sources */,
+				28424DEBE3A1D10D3CB6B6E2 /* ScriptStore.swift in Sources */,
+				29D246FE8EA91DDD087BAC65 /* ScrollingTextView.swift in Sources */,
+				18C357586BE80F57884B38A3 /* Session.swift in Sources */,
+				86833B359635B20F4C052780 /* SessionViews.swift in Sources */,
+				FF33C6B2A625437F75B88657 /* Theme.swift in Sources */,
+				80B82715C43D5EB28B6BC13C /* VideoFilterProcessor.swift in Sources */,
+				5553D53B320B86E06160477F /* VideoWriter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0646828A52416320629476FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 633C62679D75DCE6F0007FB2 /* Cue */;
+			targetProxy = 5DC68CA004D963BD7F6DB62A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B7D438BD1448C703885E9D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.manudev.pronter.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cue;
+			};
+			name = Debug;
+		};
+		2DD21660EACC80FAE89FFB59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PFXAB2V4ZM;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = "$(inherited) -weak_framework FoundationModels";
+				PRODUCT_BUNDLE_IDENTIFIER = com.manudev.pronter.mac;
+				PRODUCT_NAME = Cue;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		82B0E095A0074E08965228FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.manudev.pronter;
+				PRODUCT_NAME = Cue;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		86584D1F5FFBE2546C24B2CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = PFXAB2V4ZM;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		89927C3DABFF1AB850F18D54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.manudev.pronter;
+				PRODUCT_NAME = Cue;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A282341BA681E6779E25C7B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PFXAB2V4ZM;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = "$(inherited) -weak_framework FoundationModels";
+				PRODUCT_BUNDLE_IDENTIFIER = com.manudev.pronter.mac;
+				PRODUCT_NAME = Cue;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AAA3753A89DA9867C798BE47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.manudev.pronter.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cue;
+			};
+			name = Release;
+		};
+		E2E6CC8FE3172B97AF9989C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = PFXAB2V4ZM;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07DB99E45FC6469A1B11CBB9 /* Build configuration list for PBXNativeTarget "Cue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89927C3DABFF1AB850F18D54 /* Debug */,
+				82B0E095A0074E08965228FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0C4271E785164B002F32EE18 /* Build configuration list for PBXNativeTarget "CueMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A282341BA681E6779E25C7B3 /* Debug */,
+				2DD21660EACC80FAE89FFB59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		189FD828326F65D5E20F2851 /* Build configuration list for PBXProject "Cue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E6CC8FE3172B97AF9989C9 /* Debug */,
+				86584D1F5FFBE2546C24B2CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FB082D565E385BEC25E39FAF /* Build configuration list for PBXNativeTarget "CueUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B7D438BD1448C703885E9D9 /* Debug */,
+				AAA3753A89DA9867C798BE47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		51182C2C65AAB4BF2B709B38 /* XCRemoteSwiftPackageReference "WhisperKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/argmaxinc/WhisperKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6E5D1D19D102D884C7583412 /* WhisperKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51182C2C65AAB4BF2B709B38 /* XCRemoteSwiftPackageReference "WhisperKit" */;
+			productName = WhisperKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3A710968E8080B37367BF584 /* Project object */;
+}

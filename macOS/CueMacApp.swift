@@ -2,14 +2,14 @@ import SwiftUI
 
 /// Punto de entrada: fija el idioma de la interfaz antes de crear la app.
 @main
-enum PronterMain {
+enum CueMain {
     static func main() {
         AppLanguage.applyAtLaunch()
-        PronterMacApp.main()
+        CueMacApp.main()
     }
 }
 
-struct PronterMacApp: App {
+struct CueMacApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     @ObservedObject private var model = MacAppModel.shared
 

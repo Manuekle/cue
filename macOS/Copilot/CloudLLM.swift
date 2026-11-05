@@ -84,7 +84,7 @@ enum LLMEngine: String, CaseIterable, Identifiable {
         switch self {
         case .openai: ["minimal", "low", nil]
         case .gemini: ["none", "minimal", "low", nil]
-        case .muse: ["low", nil]
+        case .muse: ["minimal", "low", nil]
         case .claude: ["low", nil]
         default: [nil]
         }

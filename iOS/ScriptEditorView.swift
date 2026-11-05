@@ -63,8 +63,8 @@ struct ScriptEditorView: View {
                 .focused($editing)
 
             HStack(spacing: 8) {
-                Chip(systemImage: "text.word.spacing", text: String(localized: "\(draft.wordCount) words"))
-                Chip(systemImage: "clock", text: "≈ \(TimeFormat.estimate(words: draft.wordCount, wpm: settings.wordsPerMinute)) min")
+                Chip(icon: .textFont, text: String(localized: "\(draft.wordCount) words"))
+                Chip(icon: .clock, text: "≈ \(TimeFormat.estimate(words: draft.wordCount, wpm: settings.wordsPerMinute)) min")
             }
             .padding(.horizontal, 22)
             .padding(.top, 10)
@@ -94,15 +94,15 @@ struct ScriptEditorView: View {
 
     private var launchBar: some View {
         HStack(spacing: 10) {
-            LaunchTile(title: "Record", subtitle: "with Cue", systemImage: "record.circle", prominent: true) {
+            LaunchTile(title: "Record", subtitle: "with Cue", icon: .record, prominent: true) {
                 mode = .camera
             }
             .accessibilityIdentifier("launch-camera")
-            LaunchTile(title: "Floating", subtitle: "over another app", systemImage: "pip.enter") {
+            LaunchTile(title: "Floating", subtitle: "over another app", icon: .pip) {
                 mode = .floating
             }
             .accessibilityIdentifier("launch-floating")
-            LaunchTile(title: "Read", subtitle: "full screen", systemImage: "text.viewfinder") {
+            LaunchTile(title: "Read", subtitle: "full screen", icon: .bookOpen) {
                 mode = .reader
             }
             .accessibilityIdentifier("launch-reader")
@@ -127,16 +127,14 @@ struct ScriptEditorView: View {
 private struct LaunchTile: View {
     let title: LocalizedStringKey
     let subtitle: LocalizedStringKey
-    let systemImage: String
+    let icon: HugeIcon.Name
     var prominent = false
     let action: () -> Void
 
     var body: some View {
         Button(action: action) {
             VStack(spacing: 6) {
-                Image(systemName: systemImage)
-                    .font(.system(size: 24, weight: .semibold, design: .default))
-                    .symbolRenderingMode(.hierarchical)
+                HugeIcon(icon, size: 26)
                 Text(title)
                     .textStyle(.callout, weight: .bold)
                 Text(subtitle)

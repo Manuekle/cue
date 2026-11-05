@@ -2,8 +2,8 @@
 """Sincroniza Shared/Localizable.xcstrings con los textos que el compilador extrae del código.
 
 xcodebuild no actualiza el catálogo (Xcode sí, al compilar en el IDE). Uso:
-  xcodebuild -project Pronter.xcodeproj -scheme PronterMac -derivedDataPath build/loc SWIFT_EMIT_LOC_STRINGS=YES build
-  xcodebuild -project Pronter.xcodeproj -scheme Pronter -destination 'generic/platform=iOS Simulator' \
+  xcodebuild -project Cue.xcodeproj -scheme CueMac -derivedDataPath build/loc SWIFT_EMIT_LOC_STRINGS=YES build
+  xcodebuild -project Cue.xcodeproj -scheme Cue -destination 'generic/platform=iOS Simulator' \
       -derivedDataPath build/loc SWIFT_EMIT_LOC_STRINGS=YES build
   python3 tools/sync-strings.py build/loc
 Agrega las claves nuevas (sin traducir), quita las que ya no están y lista las que faltan en español.
@@ -16,7 +16,7 @@ build = sys.argv[1] if len(sys.argv) > 1 else os.path.join(root, 'build/loc')
 catalog_path = os.path.join(root, 'Shared/Localizable.xcstrings')
 
 found = {}
-for f in glob.glob(os.path.join(build, 'Build/Intermediates.noindex/Pronter.build/**/*.stringsdata'), recursive=True):
+for f in glob.glob(os.path.join(build, 'Build/Intermediates.noindex/Cue.build/**/*.stringsdata'), recursive=True):
     data = json.load(open(f))
     src = os.path.relpath(data['source'], root)
     for items in data['tables'].values():

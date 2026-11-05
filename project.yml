@@ -1,4 +1,4 @@
-name: Pronter
+name: Cue
 options:
   bundleIdPrefix: com.manudev
   developmentLanguage: en
@@ -15,15 +15,15 @@ packages:
 settings:
   base:
     SWIFT_VERSION: "5.0"
-    MARKETING_VERSION: "1.0"
-    CURRENT_PROJECT_VERSION: "1"
+    MARKETING_VERSION: "1.1"
+    CURRENT_PROJECT_VERSION: "2"
     DEVELOPMENT_TEAM: PFXAB2V4ZM
     ENABLE_USER_SCRIPT_SANDBOXING: YES
     ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: YES
     LOCALIZATION_PREFERS_STRING_CATALOGS: YES
 
 targets:
-  Pronter:
+  Cue:
     type: application
     platform: iOS
     sources:
@@ -33,6 +33,8 @@ targets:
       path: iOS/Info.plist
       properties:
         CFBundleDisplayName: Cue
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         CFBundleDevelopmentRegion: en
         UILaunchScreen:
           UIColorName: LaunchBackground
@@ -63,23 +65,23 @@ targets:
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
     scheme:
       testTargets:
-        - PronterUITests
+        - CueUITests
 
-  PronterUITests:
+  CueUITests:
     type: bundle.ui-testing
     platform: iOS
     sources:
       - iOSUITests
     dependencies:
-      - target: Pronter
+      - target: Cue
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.manudev.pronter.uitests
         CODE_SIGN_STYLE: Automatic
-        TEST_TARGET_NAME: Pronter
+        TEST_TARGET_NAME: Cue
         GENERATE_INFOPLIST_FILE: YES
 
-  PronterMac:
+  CueMac:
     type: application
     platform: macOS
     sources:
@@ -92,6 +94,8 @@ targets:
       path: macOS/Info.plist
       properties:
         CFBundleDisplayName: Cue
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         CFBundleDevelopmentRegion: en
         LSApplicationCategoryType: public.app-category.productivity
         NSHumanReadableCopyright: Cue

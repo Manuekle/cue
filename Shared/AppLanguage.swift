@@ -41,7 +41,7 @@ enum AppLanguage: String, CaseIterable, Identifiable {
     }
 
     #if os(macOS)
-    /// Cierra y vuelve a abrir Pronter para aplicar el idioma.
+    /// Cierra y vuelve a abrir Cue para aplicar el idioma.
     static func relaunch() {
         let path = Bundle.main.bundlePath
         let task = Process()

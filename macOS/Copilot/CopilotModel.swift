@@ -1,6 +1,7 @@
 import AppKit
 import AVFoundation
 import Foundation
+import os
 
 /// Una frase de la conversación.
 struct TranscriptLine: Identifiable, Equatable {
@@ -88,8 +89,12 @@ final class CopilotModel: ObservableObject {
     private let microphone = MicrophoneCapture()
     private let systemAudio = SystemAudioCapture()
     private let micSegmenter = SpeechSegmenter()
-    private let systemSegmenter = SpeechSegmenter()
-    private var segments: AsyncStream<(TranscriptLine.Speaker, [Float])>.Continuation?
+    /// La otra persona: frase cerrada con menos silencio, para responder antes.
+    private let systemSegmenter = SpeechSegmenter(silence: 0.5)
+    private var segments: SegmentQueue?
+    private static let log = Logger(subsystem: "com.manudev.cue", category: "copilot")
+    /// Cuándo se pidió la sugerencia en curso (para medir lo que tarda la IA).
+    private var suggestionStartedAt: Date?
     private var workerTask: Task<Void, Never>?
     private var suggestionTask: Task<Void, Never>?
     private var autoSuggestTask: Task<Void, Never>?
@@ -152,10 +157,10 @@ final class CopilotModel: ObservableObject {
         }
         guard !Task.isCancelled else { return }
 
-        let (stream, continuation) = AsyncStream.makeStream(of: (TranscriptLine.Speaker, [Float]).self)
-        segments = continuation
-        micSegmenter.onSegment = { continuation.yield((.me, $0)) }
-        systemSegmenter.onSegment = { continuation.yield((.them, $0)) }
+        let queue = SegmentQueue()
+        segments = queue
+        micSegmenter.onSegment = { queue.push(.me, $0) }
+        systemSegmenter.onSegment = { queue.push(.them, $0) }
         let micSegmenter = micSegmenter
         let systemSegmenter = systemSegmenter
         microphone.onSamples = { micSegmenter.append($0) }
@@ -166,9 +171,12 @@ final class CopilotModel: ObservableObject {
 
         let transcriber = transcriber
         let language = settings.language.whisperCode
+        // Whisper transcribe de a una frase: lo de la otra persona va primero, porque es lo que dispara la respuesta.
         workerTask = Task { [weak self] in
-            for await (speaker, samples) in stream {
+            while let (speaker, samples) = await queue.next() {
+                let started = Date()
                 guard let text = try? await transcriber.transcribe(samples, language: language), !text.isEmpty else { continue }
+                Self.log.info("whisper \(speaker == .them ? "them" : "me", privacy: .public): \(Double(samples.count) / 16_000, format: .fixed(precision: 1))s audio in \(Date().timeIntervalSince(started) * 1000, format: .fixed(precision: 0))ms")
                 self?.append(text, from: speaker)
             }
         }
@@ -223,11 +231,12 @@ final class CopilotModel: ObservableObject {
         return text.split(whereSeparator: { $0.isWhitespace }).filter { $0.count > 1 }.count >= 3
     }
 
-    /// Espera un momento por si la otra persona sigue hablando.
+    /// Pide la respuesta casi al instante (la frase ya se cerró tras medio segundo de silencio). Si la otra
+    /// persona sigue hablando, llega otra frase y la sugerencia se vuelve a pedir con todo el contexto.
     private func scheduleAutoSuggestion() {
         autoSuggestTask?.cancel()
         autoSuggestTask = Task { [weak self] in
-            try? await Task.sleep(for: .milliseconds(700))
+            try? await Task.sleep(for: .milliseconds(150))
             guard !Task.isCancelled else { return }
             self?.suggest()
         }
@@ -246,10 +255,14 @@ final class CopilotModel: ObservableObject {
         isThinking = true
         suggestionError = nil
         suggestion = ""
+        suggestionStartedAt = .now
         suggestionTask = Task { [weak self] in
             do {
                 for try await text in LocalLLM.stream(engine: engine, model: model, instructions: instructions, prompt: prompt) {
                     guard !Task.isCancelled else { return }
+                    if let self, self.suggestion.isEmpty, let started = self.suggestionStartedAt {
+                        Self.log.info("ai \(engine.rawValue, privacy: .public) first text in \(Date().timeIntervalSince(started) * 1000, format: .fixed(precision: 0))ms")
+                    }
                     self?.suggestion = Self.tidy(text)
                 }
             } catch {
@@ -259,6 +272,14 @@ final class CopilotModel: ObservableObject {
             guard !Task.isCancelled else { return }
             self?.isThinking = false
         }
+    }
+
+    /// Carga Whisper en segundo plano en cuanto se abre el Copiloto, para que al pulsar el micrófono ya esté listo.
+    func prewarm() {
+        guard !isBusy else { return }
+        let transcriber = transcriber
+        let variant = settings.whisperModel.rawValue
+        Task.detached(priority: .utility) { await transcriber.prewarm(variant: variant) }
     }
 
     func copySuggestion() {
@@ -351,5 +372,67 @@ final class CopilotModel: ObservableObject {
             result = String(result.dropFirst(prefix.count)).trimmingCharacters(in: .whitespaces)
         }
         return result.trimmingCharacters(in: CharacterSet(charactersIn: "\"“”«» "))
+    }
+}
+
+/// Frases pendientes de transcribir. Las de la otra persona salen primero; si tus frases se acumulan,
+/// se descartan las más viejas (solo dan contexto y no deben retrasar la respuesta).
+final class SegmentQueue: @unchecked Sendable {
+    private let lock = NSLock()
+    private var them: [[Float]] = []
+    private var me: [[Float]] = []
+    private var waiter: CheckedContinuation<(TranscriptLine.Speaker, [Float])?, Never>?
+    private var finished = false
+    private static let maxPendingMine = 2
+
+    func push(_ speaker: TranscriptLine.Speaker, _ samples: [Float]) {
+        lock.lock()
+        guard !finished else { lock.unlock(); return }
+        if let waiter {
+            self.waiter = nil
+            lock.unlock()
+            waiter.resume(returning: (speaker, samples))
+            return
+        }
+        if speaker == .them {
+            them.append(samples)
+        } else {
+            me.append(samples)
+            if me.count > Self.maxPendingMine { me.removeFirst(me.count - Self.maxPendingMine) }
+        }
+        lock.unlock()
+    }
+
+    /// La siguiente frase, o nil cuando se dejó de escuchar.
+    func next() async -> (TranscriptLine.Speaker, [Float])? {
+        await withCheckedContinuation { continuation in
+            lock.lock()
+            if !them.isEmpty {
+                let item = them.removeFirst()
+                lock.unlock()
+                continuation.resume(returning: (.them, item))
+            } else if !me.isEmpty {
+                let item = me.removeFirst()
+                lock.unlock()
+                continuation.resume(returning: (.me, item))
+            } else if finished {
+                lock.unlock()
+                continuation.resume(returning: nil)
+            } else {
+                waiter = continuation
+                lock.unlock()
+            }
+        }
+    }
+
+    func finish() {
+        lock.lock()
+        finished = true
+        let waiter = waiter
+        self.waiter = nil
+        them.removeAll()
+        me.removeAll()
+        lock.unlock()
+        waiter?.resume(returning: nil)
     }
 }

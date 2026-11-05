@@ -31,7 +31,7 @@ final class PrompterSettings: ObservableObject {
     @Published var floatingAutoStart: Bool { didSet { save(floatingAutoStart, "floatingAutoStart") } }
     /// Solo iOS: ventana flotante vertical u horizontal.
     @Published var floatingVertical: Bool { didSet { save(floatingVertical, "floatingVertical") } }
-    /// Al grabar con Pronter, el texto avanza mientras hablas y espera cuando callas.
+    /// Al grabar con Cue, el texto avanza mientras hablas y espera cuando callas.
     @Published var voiceFollow: Bool { didSet { save(voiceFollow, "voiceFollow") } }
     /// Solo Mac: la pestaña (píldora) queda siempre en el notch. Desactivada, el prompter solo aparece
     /// al abrirlo (⌃⌥P, menú, clic en el notch) y se oculta del todo al cerrarlo.

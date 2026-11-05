@@ -1,7 +1,7 @@
 import CoreText
 import SwiftUI
 
-/// Estilo visual de Pronter: vidrio negro, botones perla (plata) y acento azul.
+/// Estilo visual de Cue: vidrio negro, botones perla (plata) y acento azul.
 enum Theme {
     /// Azul de marca #0A84FF (AccentColor del catálogo de cada app). Para lo activo / en vivo / IA:
     /// escuchando, reproduciendo, selección, línea de lectura, interruptores. Encima va texto blanco.
@@ -81,12 +81,12 @@ enum AppFont {
         registered = true
         for name in files {
             guard let url = Bundle.main.url(forResource: name, withExtension: "ttf") else {
-                NSLog("Pronter: falta la fuente %@", name)
+                NSLog("Cue: falta la fuente %@", name)
                 continue
             }
             var error: Unmanaged<CFError>?
             if !CTFontManagerRegisterFontsForURL(url as CFURL, .process, &error) {
-                NSLog("Pronter: no se pudo registrar %@: %@", name, String(describing: error?.takeRetainedValue()))
+                NSLog("Cue: no se pudo registrar %@: %@", name, String(describing: error?.takeRetainedValue()))
             }
         }
     }
@@ -303,20 +303,12 @@ struct PressableStyle: ButtonStyle {
     }
 }
 
-/// Botón redondo. Acepta un SF Symbol (`systemImage`) o un ícono de Hugeicons (`icon`).
+/// Botón redondo con un ícono de Hugeicons (relleno).
 struct CircleButton: View {
-    var systemImage: String?
-    var icon: HugeIcon.Name?
+    let icon: HugeIcon.Name
     var size: CGFloat = 44
     var active = false
     let action: () -> Void
-
-    init(systemImage: String, size: CGFloat = 44, active: Bool = false, action: @escaping () -> Void) {
-        self.systemImage = systemImage
-        self.size = size
-        self.active = active
-        self.action = action
-    }
 
     init(icon: HugeIcon.Name, size: CGFloat = 44, active: Bool = false, action: @escaping () -> Void) {
         self.icon = icon
@@ -327,14 +319,7 @@ struct CircleButton: View {
 
     var body: some View {
         Button(action: action) {
-            Group {
-                if let icon {
-                    HugeIcon(icon, size: size * 0.46, filled: true)
-                } else if let systemImage {
-                    Image(systemName: systemImage)
-                        .font(.system(size: size * 0.38, weight: .semibold, design: .default))
-                }
-            }
+            HugeIcon(icon, size: size * 0.46, filled: true)
                 .foregroundStyle(.white)
                 .frame(width: size, height: size)
                 .background(Circle().fill(active ? AnyShapeStyle(Theme.accent) : AnyShapeStyle(Color.white.opacity(0.07))))
@@ -353,6 +338,29 @@ struct CircleButton: View {
 struct HugeIcon: View {
     enum Name: String {
         case aiMagic = "hi-ai-magic"
+        case alignTop = "hi-align-top"
+        case arrowRight = "hi-arrow-right"
+        case arrowUp = "hi-arrow-up"
+        case blur = "hi-blur"
+        case bookOpen = "hi-book-open"
+        case cameraRotate = "hi-camera-rotate"
+        case cancel = "hi-cancel"
+        case colors = "hi-colors"
+        case globe = "hi-globe"
+        case landscape = "hi-landscape"
+        case lightBulb = "hi-light-bulb"
+        case noteAdd = "hi-note-add"
+        case pencil = "hi-pencil"
+        case pip = "hi-pip"
+        case pipExit = "hi-pip-exit"
+        case portrait = "hi-portrait"
+        case record = "hi-record"
+        case sun = "hi-sun"
+        case textAlignCenter = "hi-text-align-center"
+        case textFont = "hi-text-font"
+        case tick = "hi-tick"
+        case timer = "hi-timer"
+        case videoOff = "hi-video-off"
         case alert = "hi-alert"
         case arrowDown = "hi-arrow-down"
         case audioWave = "hi-audio-wave"
@@ -419,12 +427,12 @@ struct HugeIcon: View {
 
 /// Etiqueta pequeña con ícono.
 struct Chip: View {
-    let systemImage: String
+    let icon: HugeIcon.Name
     let text: String
 
     var body: some View {
         HStack(spacing: 5) {
-            Image(systemName: systemImage)
+            HugeIcon(icon, size: 13)
             Text(text)
         }
         .textStyle(.caption)
@@ -435,7 +443,7 @@ struct Chip: View {
     }
 }
 
-/// Marca de Pronter: el icono de la app completo (cuadrado claro con la píldora negra).
+/// Marca de Cue: el icono de la app completo (cuadrado claro con la píldora negra).
 struct LogoMark: View {
     var size: CGFloat = 30
 

@@ -16,7 +16,7 @@ struct ReaderView: View {
 
             VStack {
                 HStack {
-                    CircleButton(systemImage: "xmark") { dismiss() }
+                    CircleButton(icon: .cancel) { dismiss() }
                     Spacer()
                     ElapsedLabel(engine: engine)
                         .padding(.horizontal, 14)
@@ -24,7 +24,7 @@ struct ReaderView: View {
                         .background(Pill().fill(Color.black.opacity(0.45)))
                         .overlay(Pill().strokeBorder(Theme.hairline, lineWidth: 1))
                     Spacer()
-                    CircleButton(systemImage: "arrow.left.and.right.righttriangle.left.righttriangle.right",
+                    CircleButton(icon: .mirror,
                                  active: settings.mirror) {
                         settings.mirror.toggle()
                     }
@@ -60,11 +60,11 @@ struct PlaybackControls: View {
                 .textStyle(.footnote)
                 .foregroundStyle(Theme.secondaryText)
             HStack(spacing: 30) {
-                CircleButton(systemImage: "backward.end.fill") { engine.stop() }
+                CircleButton(icon: .previous) { engine.stop() }
                     .disabled(engine.phase == .ready)
                     .opacity(engine.phase == .ready ? 0.4 : 1)
                 PlayButton { engine.togglePlay() }
-                CircleButton(systemImage: settings.centered ? "text.aligncenter" : "text.alignleft") {
+                CircleButton(icon: settings.centered ? .textAlignCenter : .textAlignLeft) {
                     settings.centered.toggle()
                 }
             }
@@ -92,15 +92,14 @@ struct PlaybackControls: View {
 
 /// Botón grande de reproducir.
 struct PlayButton: View {
-    var systemImage = "play.fill"
+    var icon: HugeIcon.Name = .play
     let action: () -> Void
 
     var body: some View {
         Button(action: action) {
-            Image(systemName: systemImage)
-                .font(.system(size: 30, weight: .bold, design: .default))
+            HugeIcon(icon, size: 30, filled: true)
                 .foregroundStyle(.white)
-                .offset(x: systemImage == "play.fill" ? 2 : 0)
+                .offset(x: icon == .play ? 2 : 0)
                 .frame(width: 78, height: 78)
                 .background(Circle().fill(Theme.accent))
         }

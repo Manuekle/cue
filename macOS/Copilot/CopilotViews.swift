@@ -107,7 +107,7 @@ private struct CopilotPlaceholder: View {
             case .preparing:
                 HStack(spacing: 8) {
                     ProgressView().controlSize(.small)
-                    Text("Preparing Whisper… the first time takes a moment.")
+                    Text("Preparing Whisper… the first time on this Mac can take a few minutes.")
                 }
                 .foregroundStyle(Theme.secondaryText)
             case .listening:
@@ -274,7 +274,10 @@ struct CopilotSetupView: View {
             .frame(maxWidth: 880, alignment: .leading)
             .frame(maxWidth: .infinity)
         }
-        .task { await copilot.refreshOllamaModels() }
+        .task {
+            copilot.prewarm()
+            await copilot.refreshOllamaModels()
+        }
     }
 
     private var header: some View {

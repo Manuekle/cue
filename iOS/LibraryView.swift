@@ -27,7 +27,7 @@ struct LibraryView: View {
                         .listRowSeparator(.hidden)
                         .contextMenu {
                             MoveToSessionMenu(store: store, script: script)
-                            Button("Delete", systemImage: "trash", role: .destructive) {
+                            Button("Delete", image: .hiDelete, role: .destructive) {
                                 store.delete(id: script.id)
                             }
                         }
@@ -49,7 +49,7 @@ struct LibraryView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     SessionMenu(store: store) {
-                        Image(systemName: "folder")
+                        HugeIcon(.folder, size: 20)
                     }
                     .accessibilityLabel("Sessions")
                 }
@@ -57,7 +57,7 @@ struct LibraryView: View {
                     Button {
                         showsSettings = true
                     } label: {
-                        Image(systemName: "slider.horizontal.3")
+                        HugeIcon(.settings, size: 20)
                     }
                     .accessibilityLabel("Settings")
                 }
@@ -66,7 +66,7 @@ struct LibraryView: View {
                 Button {
                     path.append(store.create().id)
                 } label: {
-                    Label("New script", systemImage: "plus")
+                    Label("New script", image: "hi-plus")
                 }
                 .buttonStyle(PrimaryButtonStyle())
                 .padding(.horizontal, 22)
@@ -117,8 +117,7 @@ struct LibraryView: View {
 
     private var emptyState: some View {
         VStack(spacing: 12) {
-            Image(systemName: "text.badge.plus")
-                .font(.system(size: 40, weight: .semibold, design: .default))
+            HugeIcon(.noteAdd, size: 40)
                 .foregroundStyle(Theme.accent)
             Text("No scripts")
                 .textStyle(.title)
@@ -145,8 +144,7 @@ private struct ScriptCard: View {
                     .foregroundStyle(.white)
                     .lineLimit(1)
                 Spacer(minLength: 8)
-                Image(systemName: "chevron.right")
-                    .font(.system(size: 13, weight: .bold, design: .default))
+                HugeIcon(.arrowRight, size: 13)
                     .foregroundStyle(Theme.tertiaryText)
             }
             if !script.preview.isEmpty {
@@ -156,8 +154,8 @@ private struct ScriptCard: View {
                     .lineLimit(2)
             }
             HStack(spacing: 8) {
-                Chip(systemImage: "text.word.spacing", text: String(localized: "\(script.wordCount) words"))
-                Chip(systemImage: "clock", text: "≈ \(TimeFormat.estimate(words: script.wordCount, wpm: wordsPerMinute)) min")
+                Chip(icon: .textFont, text: String(localized: "\(script.wordCount) words"))
+                Chip(icon: .clock, text: "≈ \(TimeFormat.estimate(words: script.wordCount, wpm: wordsPerMinute)) min")
             }
         }
         .padding(18)

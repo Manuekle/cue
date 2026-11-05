@@ -1801,12 +1801,12 @@
         }
       }
     },
-    "Preparing Whisper… the first time takes a moment." : {
+    "Preparing Whisper… the first time on this Mac can take a few minutes." : {
       "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Preparando Whisper… la primera vez tarda un poco."
+            "value" : "Preparando Whisper… la primera vez en este Mac puede tardar unos minutos."
           }
         }
       }
